@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintours & Travels | Premium Bus Travel & Charter Services</title>
+    <meta name="description" content="Vintours & Travels offers premium bus journeys, luxury coach charters, intercity routes, and customized bus tour packages with a modern fleet and experienced drivers.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vintours & Travels | Premium Bus Travel & Charter Services">
+    <meta property="og:description" content="Your trusted travel partner for comfortable, safe, and memorable bus journeys.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Specific overrides for Bus theme -->
+    <style>
+        .hero {
+            background: linear-gradient(rgba(10, 37, 64, 0.75), rgba(10, 37, 64, 0.6)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+        }
+        .cta-section {
+            background: linear-gradient(rgba(10, 37, 64, 0.8), rgba(10, 37, 64, 0.8)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover fixed !important;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!-- 1. Sticky Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition-all">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <i class="bi bi-bus-front-fill text-accent me-2 fs-3"></i>
+                <span class="brand-text">Vintours & Travels</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#destinations">Routes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-whatsapp rounded-pill d-flex align-items-center gap-2">
+                        <i class="bi bi-whatsapp"></i> <span class="d-none d-xl-inline">WhatsApp Us</span>
+                    </a>
+                    <a href="#contact" class="btn btn-primary rounded-pill btn-book-now">Book Tickets</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero d-flex align-items-center position-relative">
+        <div class="hero-bg"></div>
+
+        <div class="container position-relative z-index-2 mt-lg-5 pt-lg-5 pt-3 pb-5">
+            <div class="row">
+                <div class="col-lg-8 col-xl-7 text-white reveal-up">
+                    <span class="badge bg-accent text-dark rounded-pill px-3 py-2 mb-3 fw-semibold">Premium Bus Travels</span>
+                    <h1 class="display-3 fw-bold mb-4 font-serif">Experience Comfort on Every Journey</h1>
+                    <p class="lead mb-5 fs-4 text-light-gray opacity-90">Travel safe and relaxed with our modern fleet of AC Sleeper, Volvo, and luxury coaches across top destinations.</p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#destinations" class="btn btn-accent btn-lg rounded-pill px-4">View Top Routes</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill px-4">Charter a Bus</a>
+                    </div>
+                    <div class="trust-element d-flex align-items-center gap-3">
+                        <div class="d-flex text-accent">
+                            <i class="bi bi-shield-check fs-4"></i>
+                        </div>
+                        <p class="mb-0 fs-6 text-light opacity-75">GPS Tracked • Highly Sanitized • On-Time Guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Search Card (Desktop & Tablet) -->
+        <div class="container position-absolute start-50 translate-middle-x search-card-floating d-none d-md-block">
+            <div class="search-card glassmorphism p-4 rounded-4 shadow-lg">
+                <form class="row g-3 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label text-dark fw-medium small mb-1">From</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-geo-alt"></i></span>
+                            <input type="text" class="form-control border-start-0 ps-0 shadow-none" placeholder="Departure City">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-dark fw-medium small mb-1">To</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-geo-fill"></i></span>
+                            <input type="text" class="form-control border-start-0 ps-0 shadow-none" placeholder="Destination City">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-dark fw-medium small mb-1">Date of Journey</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0 text-muted"><i class="bi bi-calendar-event"></i></span>
+                            <input type="date" class="form-control border-start-0 ps-0 shadow-none text-muted">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary w-100 rounded-3 py-2 btn-lg" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Search Buses</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Search Card (Visible only on mobile) -->
+    <div class="container d-md-none mt-n5 position-relative z-index-2 mb-5">
+        <div class="search-card bg-white p-4 rounded-4 shadow-sm border border-light">
+            <form class="row g-3">
+                <div class="col-12">
+                    <label class="form-label fw-medium small text-secondary">From</label>
+                    <input type="text" class="form-control shadow-none" placeholder="Departure City">
+                </div>
+                <div class="col-12">
+                    <label class="form-label fw-medium small text-secondary">To</label>
+                    <input type="text" class="form-control shadow-none" placeholder="Destination City">
+                </div>
+                <div class="col-12">
+                    <label class="form-label fw-medium small text-secondary">Date of Journey</label>
+                    <input type="date" class="form-control shadow-none text-secondary">
+                </div>
+                <div class="col-12 mt-4">
+                    <button type="button" class="btn btn-primary w-100 rounded-3 py-2" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Search Buses</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 3. About Us Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 position-relative reveal-left">
+                    <div class="about-img-wrapper rounded-4 overflow-hidden shadow-lg position-relative">
+                        <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Bus Interior" class="img-fluid w-100 object-fit-cover" style="height: 500px;">
+                        <div class="experience-badge glassmorphism position-absolute bottom-0 end-0 m-4 p-3 rounded-3 shadow text-center">
+                            <h3 class="text-accent fw-bold mb-0">15+</h3>
+                            <p class="text-dark small mb-0 fw-medium">Years on the Road</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-right">
+                    <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">About Vintours</h5>
+                    <h2 class="display-5 fw-bold mb-4 font-serif text-dark-blue">Redefining Comfort in Road Travel</h2>
+                    <p class="lead text-muted mb-4 fs-6">At Vintours & Travels, we take pride in operating one of the finest fleets of luxury coaches. Our mission is to make road travel a delightful experience by providing state-of-the-art buses, well-trained staff, and uncompromising safety standards.</p>
+                    
+                    <ul class="list-unstyled mb-5">
+                        <li class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-light-primary text-primary rounded-circle p-2 me-3">
+                                <i class="bi bi-bus-front fs-5"></i>
+                            </div>
+                            <span class="fw-medium text-dark">Modern AC Sleeper & Seater Fleet</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-light-primary text-primary rounded-circle p-2 me-3">
+                                <i class="bi bi-person-badge fs-5"></i>
+                            </div>
+                            <span class="fw-medium text-dark">Professional, Experienced Drivers</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-light-primary text-primary rounded-circle p-2 me-3">
+                                <i class="bi bi-clock-history fs-5"></i>
+                            </div>
+                            <span class="fw-medium text-dark">Exceptional On-Time Performance</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#services" class="btn btn-primary btn-lg rounded-pill px-4">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section id="services" class="section-padding services-section-bg">
+        <div class="container">
+            <div class="text-center mb-5 reveal-up">
+                <span class="section-badge mb-2">WHAT WE OFFER</span>
+                <h2 class="display-5 fw-bold font-serif text-dark-blue mb-3">Comprehensive Bus Transport Solutions</h2>
+                <div class="divider mx-auto bg-accent rounded"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 100ms;">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body p-3 d-flex flex-column">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="service-icon-wrapper">
+                                    <i class="bi bi-signpost-2-fill"></i>
+                                </div>
+                                <span class="service-tag">Daily Express</span>
+                            </div>
+                            <h4 class="service-card-title">Intercity Routes</h4>
+                            <p class="service-card-desc mb-4">Daily premium bus services connecting major cities with utmost comfort and punctuality. Book your tickets instantly.</p>
+                            <a href="#contact" class="service-action-btn mt-auto align-self-start">
+                                <span>Book Tickets</span> <i class="bi bi-arrow-right-short fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 200ms;">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body p-3 d-flex flex-column">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="service-icon-wrapper">
+                                    <i class="bi bi-bus-front-fill"></i>
+                                </div>
+                                <span class="service-tag">Custom Luxury</span>
+                            </div>
+                            <h4 class="service-card-title">Private Bus Charter</h4>
+                            <p class="service-card-desc mb-4">Hire our luxury coaches for private family functions, weddings, and group excursions tailored to your schedule.</p>
+                            <a href="#contact" class="service-action-btn mt-auto align-self-start">
+                                <span>Enquire Now</span> <i class="bi bi-arrow-right-short fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 300ms;">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body p-3 d-flex flex-column">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="service-icon-wrapper">
+                                    <i class="bi bi-brightness-high-fill"></i>
+                                </div>
+                                <span class="service-tag">Group Packages</span>
+                            </div>
+                            <h4 class="service-card-title">Pilgrimage Tours</h4>
+                            <p class="service-card-desc mb-4">Specialized bus tour packages for popular pilgrimage destinations, providing a serene and coordinated group travel experience.</p>
+                            <a href="#contact" class="service-action-btn mt-auto align-self-start">
+                                <span>View Tours</span> <i class="bi bi-arrow-right-short fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 100ms;">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body p-3 d-flex flex-column">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="service-icon-wrapper">
+                                    <i class="bi bi-building-fill-check"></i>
+                                </div>
+                                <span class="service-tag">Monthly Contracts</span>
+                            </div>
+                            <h4 class="service-card-title">Corporate Transport</h4>
+                            <p class="service-card-desc mb-4">Reliable daily commute solutions, team outing logistics, and event transport for corporate organizations.</p>
+                            <a href="#contact" class="service-action-btn mt-auto align-self-start">
+                                <span>Learn More</span> <i class="bi bi-arrow-right-short fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 200ms;">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body p-3 d-flex flex-column">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="service-icon-wrapper">
+                                    <i class="bi bi-mortarboard-fill"></i>
+                                </div>
+                                <span class="service-tag">Safety Certified</span>
+                            </div>
+                            <h4 class="service-card-title">School & College Trips</h4>
+                            <p class="service-card-desc mb-4">Safe and affordable bus arrangements for educational tours, industrial visits, and student picnics.</p>
+                            <a href="#contact" class="service-action-btn mt-auto align-self-start">
+                                <span>Book a Bus</span> <i class="bi bi-arrow-right-short fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 300ms;">
+                    <div class="card service-card h-100 p-3">
+                        <div class="card-body p-3 d-flex flex-column">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="service-icon-wrapper">
+                                    <i class="bi bi-box-seam-fill"></i>
+                                </div>
+                                <span class="service-tag">Express Cargo</span>
+                            </div>
+                            <h4 class="service-card-title">Parcel & Cargo Service</h4>
+                            <p class="service-card-desc mb-4">Fast, secure, and reliable parcel delivery leveraging our extensive daily intercity bus network.</p>
+                            <a href="#contact" class="service-action-btn mt-auto align-self-start">
+                                <span>Track Parcel</span> <i class="bi bi-arrow-right-short fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4.5 Choose Your Journey Section (Bento Grid) -->
+    <section id="journey-categories" class="section-padding bento-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <!-- Left Column: Title, Text & Features -->
+                <div class="col-lg-4 reveal-left mb-4 mb-lg-0">
+                    <span class="eyebrow-text d-block mb-2">CHOOSE YOUR JOURNEY</span>
+                    <h2 class="journey-title mb-0">Travel Your Way</h2>
+                    <div class="journey-divider"></div>
+                    <p class="journey-desc mb-3">Whether you're an explorer seeking mountain trails, a relaxer yearning for sunny beaches, or a culture lover exploring timeless heritage &ndash; we craft unforgettable road tour experiences tailored to your lifestyle.</p>
+                    
+                    <ul class="list-unstyled journey-features mb-4">
+                        <li>
+                            <span class="feature-icon-sm"><i class="bi bi-compass-fill"></i></span>
+                            <span>Tailored Itineraries & Flexible Stops</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon-sm"><i class="bi bi-bus-front-fill"></i></span>
+                            <span>Premium Volvo AC & Sleeper Coaches</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon-sm"><i class="bi bi-shield-check"></i></span>
+                            <span>Live GPS Tracking & On-Time Guarantee</span>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+                        <a href="#packages" class="btn btn-journey shadow-sm">BROWSE ALL TOURS</a>
+                        <a href="#contact" class="btn btn-outline-primary rounded-3 px-3 py-2 btn-sm fw-semibold text-uppercase">Plan Custom Trip</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Asymmetric Bento Grid -->
+                <div class="col-lg-8 reveal-right">
+                    <div class="row g-3">
+                        <!-- Left Sub-col: Tall Card (Adventure Tours) -->
+                        <div class="col-md-5">
+                            <div class="bento-card bento-card-tall bento-overlay-bottom">
+                                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Adventure Tours">
+                                <div class="bento-card-content">
+                                    <h3 class="bento-card-title">Adventure<br>Tours</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Sub-col: Stacked Cards -->
+                        <div class="col-md-7">
+                            <div class="row g-3">
+                                <!-- Top Card: Beach Getaways -->
+                                <div class="col-12">
+                                    <div class="bento-card bento-card-wide bento-overlay-top">
+                                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beach Getaways">
+                                        <div class="bento-card-content">
+                                            <h3 class="bento-card-title">Beach<br>Getaways</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Bottom Row Cards: Cultural & Luxury -->
+                                <div class="col-6">
+                                    <div class="bento-card bento-card-half bento-overlay-bottom">
+                                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cultural Journeys">
+                                        <div class="bento-card-content">
+                                            <h3 class="bento-card-title">Cultural<br>Journeys</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="bento-card bento-card-half bento-overlay-bottom">
+                                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Escapes">
+                                        <div class="bento-card-content">
+                                            <h3 class="bento-card-title">Luxury<br>Escapes</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Popular Destinations (Bus Routes) -->
+    <section id="destinations" class="section-padding bg-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3 reveal-up">
+                <div>
+                    <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">Top Connections</h5>
+                    <h2 class="display-5 fw-bold font-serif text-dark-blue mb-0">Popular Bus Routes</h2>
+                </div>
+                <a href="#contact" class="btn btn-outline-primary rounded-pill px-4">View All Routes</a>
+            </div>
+
+            <div class="row g-4">
+                <!-- Dest 1 -->
+                <div class="col-md-6 col-lg-4 reveal-up">
+                    <div class="destination-card rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Goa" class="img-fluid w-100 object-fit-cover">
+                        <div class="destination-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <h3 class="text-white fw-bold mb-1">Mumbai ⇄ Goa</h3>
+                            <p class="text-white-50 small mb-3">Daily AC Sleeper & Seater Buses.</p>
+                            <a href="#contact" class="btn btn-sm btn-accent rounded-pill align-self-start fw-semibold shadow-sm">Book Tickets</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dest 2 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 100ms;">
+                    <div class="destination-card rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Manali" class="img-fluid w-100 object-fit-cover">
+                        <div class="destination-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <h3 class="text-white fw-bold mb-1">Delhi ⇄ Manali</h3>
+                            <p class="text-white-50 small mb-3">Scenic Volvo Multi-Axle Journeys.</p>
+                            <a href="#contact" class="btn btn-sm btn-accent rounded-pill align-self-start fw-semibold shadow-sm">Book Tickets</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dest 3 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 200ms;">
+                    <div class="destination-card rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1571536802807-30451e3955d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tirupati" class="img-fluid w-100 object-fit-cover">
+                        <div class="destination-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <h3 class="text-white fw-bold mb-1">Chennai ⇄ Tirupati</h3>
+                            <p class="text-white-50 small mb-3">Frequent Darshan Special Coaches.</p>
+                            <a href="#contact" class="btn btn-sm btn-accent rounded-pill align-self-start fw-semibold shadow-sm">Book Tickets</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dest 4 -->
+                <div class="col-md-6 col-lg-4 reveal-up">
+                    <div class="destination-card rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Munnar" class="img-fluid w-100 object-fit-cover">
+                        <div class="destination-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <h3 class="text-white fw-bold mb-1">Bangalore ⇄ Munnar</h3>
+                            <p class="text-white-50 small mb-3">Weekend Getaway Night Sleepers.</p>
+                            <a href="#contact" class="btn btn-sm btn-accent rounded-pill align-self-start fw-semibold shadow-sm">Book Tickets</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dest 5 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 100ms;">
+                    <div class="destination-card rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1596423735880-5f2a689b903e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ooty" class="img-fluid w-100 object-fit-cover">
+                        <div class="destination-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <h3 class="text-white fw-bold mb-1">Hyderabad ⇄ Ooty</h3>
+                            <p class="text-white-50 small mb-3">Comfortable Premium AC Seater.</p>
+                            <a href="#contact" class="btn btn-sm btn-accent rounded-pill align-self-start fw-semibold shadow-sm">Book Tickets</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dest 6 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 200ms;">
+                    <div class="destination-card rounded-4 overflow-hidden position-relative group">
+                        <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mahabaleshwar" class="img-fluid w-100 object-fit-cover">
+                        <div class="destination-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                            <h3 class="text-white fw-bold mb-1">Pune ⇄ Mahabaleshwar</h3>
+                            <p class="text-white-50 small mb-3">Short-haul luxury coach services.</p>
+                            <a href="#contact" class="btn btn-sm btn-accent rounded-pill align-self-start fw-semibold shadow-sm">Book Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Tour Packages Section -->
+    <section id="packages" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5 reveal-up">
+                <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">Curated Journeys</h5>
+                <h2 class="display-5 fw-bold font-serif text-dark-blue mb-3">Featured Bus Tour Packages</h2>
+                <div class="divider mx-auto bg-accent rounded"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-md-6 col-lg-4 reveal-up">
+                    <div class="card package-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Mumbai to Goa">
+                            <div class="package-badge bg-primary text-white position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small fw-semibold shadow-sm">
+                                4 Days / 3 Nights
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="card-title fw-bold text-dark-blue mb-0">Mumbai to Goa</h4>
+                            </div>
+                            <p class="text-secondary-color small fw-medium mb-3"><i class="bi bi-bus-front-fill me-1"></i> Luxury AC Sleeper + Hotel</p>
+                            
+                            <div class="mt-auto border-top pt-3">
+                                <p class="text-muted small mb-1">Starting from</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold text-primary mb-0">₹7,999<span class="fs-6 fw-normal text-muted">/person</span></h5>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 mt-4">
+                                <a href="#contact" class="btn btn-outline-primary flex-grow-1 rounded-pill">View Details</a>
+                                <a href="#contact" class="btn btn-primary flex-grow-1 rounded-pill">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 100ms;">
+                    <div class="card package-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Bangalore to Munnar">
+                            <div class="package-badge bg-primary text-white position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small fw-semibold shadow-sm">
+                                3 Days / 2 Nights
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="card-title fw-bold text-dark-blue mb-0">Bangalore to Munnar</h4>
+                            </div>
+                            <p class="text-secondary-color small fw-medium mb-3"><i class="bi bi-bus-front-fill me-1"></i> Weekend Special Bus Tour</p>
+                            
+                            <div class="mt-auto border-top pt-3">
+                                <p class="text-muted small mb-1">Starting from</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold text-primary mb-0">₹5,500<span class="fs-6 fw-normal text-muted">/person</span></h5>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 mt-4">
+                                <a href="#contact" class="btn btn-outline-primary flex-grow-1 rounded-pill">View Details</a>
+                                <a href="#contact" class="btn btn-primary flex-grow-1 rounded-pill">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="col-md-6 col-lg-4 reveal-up" style="transition-delay: 200ms;">
+                    <div class="card package-card h-100 border-0 rounded-4 overflow-hidden shadow-sm">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Delhi to Manali">
+                            <div class="package-badge bg-primary text-white position-absolute top-0 end-0 m-3 px-3 py-1 rounded-pill small fw-semibold shadow-sm">
+                                5 Days / 4 Nights
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="card-title fw-bold text-dark-blue mb-0">Delhi to Manali</h4>
+                            </div>
+                            <p class="text-secondary-color small fw-medium mb-3"><i class="bi bi-bus-front-fill me-1"></i> Volvo Multi-Axle + Stay</p>
+                            
+                            <div class="mt-auto border-top pt-3">
+                                <p class="text-muted small mb-1">Starting from</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="fw-bold text-primary mb-0">₹12,000<span class="fs-6 fw-normal text-muted">/person</span></h5>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2 mt-4">
+                                <a href="#contact" class="btn btn-outline-primary flex-grow-1 rounded-pill">View Details</a>
+                                <a href="#contact" class="btn btn-primary flex-grow-1 rounded-pill">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary btn-lg rounded-pill px-5 fw-semibold">View All Tour Packages</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Why Choose Us (Horizontal Split Showcase) -->
+    <section id="why-us" class="section-padding split-promise-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Left Column: Luxury Fleet Image Showcase with Badges -->
+                <div class="col-lg-5 reveal-left">
+                    <div class="split-image-container">
+                        <img src="images/about.jpg" onerror="this.src='https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80'" alt="Vintours Luxury Bus Fleet">
+                        
+                        <!-- Top Floating Stat Badge -->
+                        <div class="split-floating-stat-top">
+                            <div class="split-floating-stat-icon">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-0">99.8% On-Time</h6>
+                                <small class="text-muted">Punctual Schedules</small>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Glass Badge -->
+                        <div class="split-glass-badge-bottom">
+                            <div>
+                                <span class="badge bg-accent text-dark fw-bold mb-1">PROMISE</span>
+                                <h6 class="mb-0 text-white font-serif">India's Preferred Bus Network</h6>
+                            </div>
+                            <div class="text-end">
+                                <div class="text-warning small mb-0">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <small class="text-white opacity-75">4.9/5 Rating</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Header & Horizontal Feature Cards -->
+                <div class="col-lg-7 reveal-right">
+                    <div class="mb-4">
+                        <span class="section-badge mb-2">OUR PROMISE</span>
+                        <h2 class="display-6 fw-bold font-serif text-dark-blue mb-3">Why Travel With Vintours Buses?</h2>
+                        <p class="text-muted lead fs-6">Experience unmatched comfort and peace of mind on every journey with our premium coach network.</p>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Card 1 -->
+                        <div class="split-promise-card">
+                            <div class="split-promise-icon-box">
+                                <i class="bi bi-bus-front"></i>
+                            </div>
+                            <div class="split-promise-content">
+                                <h5 class="split-promise-title">Modern & Luxury Fleet</h5>
+                                <p class="split-promise-desc">Volvo, Scania, and multi-axle AC sleeper buses equipped with plush reclining seats and individual power outlets.</p>
+                            </div>
+                            <div class="split-promise-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="split-promise-card">
+                            <div class="split-promise-icon-box">
+                                <i class="bi bi-tags-fill"></i>
+                            </div>
+                            <div class="split-promise-content">
+                                <h5 class="split-promise-title">Transparent & Guaranteed Pricing</h5>
+                                <p class="split-promise-desc">No hidden transaction fees or dynamic peak surges. What you see is what you pay, always.</p>
+                            </div>
+                            <div class="split-promise-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="split-promise-card">
+                            <div class="split-promise-icon-box">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="split-promise-content">
+                                <h5 class="split-promise-title">Live GPS & Safety First</h5>
+                                <p class="split-promise-desc">Real-time GPS bus tracking, verified double drivers for long routes, emergency buttons, and speed limit governor.</p>
+                            </div>
+                            <div class="split-promise-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="split-promise-card">
+                            <div class="split-promise-icon-box">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div class="split-promise-content">
+                                <h5 class="split-promise-title">24/7 Dedicated Support</h5>
+                                <p class="split-promise-desc">Round-the-clock passenger assistance hotline to help you with boarding points, schedules, and luggage.</p>
+                            </div>
+                            <div class="split-promise-arrow">
+                                <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Full-Width Stats Strip -->
+            <div class="split-stats-bar reveal-up">
+                <div class="row text-center g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="split-stat-item">
+                            <div class="split-stat-val"><span class="counter" data-target="50">0</span>+</div>
+                            <p class="split-stat-label">Luxury Buses</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="split-stat-item">
+                            <div class="split-stat-val"><span class="counter" data-target="100">0</span>+</div>
+                            <p class="split-stat-label">Daily Routes</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="split-stat-item">
+                            <div class="split-stat-val"><span class="counter" data-target="1">0</span>M+</div>
+                            <p class="split-stat-label">Happy Passengers</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="split-stat-item">
+                            <div class="split-stat-val"><span class="counter" data-target="15">0</span>+</div>
+                            <p class="split-stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Gallery Section (Continuous Infinite Marquee) -->
+    <section id="gallery" class="section-padding overflow-hidden bg-light">
+        <div class="container-fluid px-0">
+            <div class="text-center mb-5 reveal-up">
+                <span class="section-badge mb-2">MOMENTS</span>
+                <h2 class="display-5 fw-bold font-serif text-dark-blue mb-3">Life on the Road</h2>
+                <div class="divider mx-auto bg-accent rounded"></div>
+            </div>
+
+            <!-- Marquee Container -->
+            <div class="gallery-marquee-wrapper reveal-up">
+                <div class="gallery-marquee-track">
+                    <!-- Original Set -->
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Scenic Highways">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Intercity Express</span>
+                            <h4 class="gallery-marquee-title">Scenic Highways</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Interiors">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Volvo Sleeper</span>
+                            <h4 class="gallery-marquee-title">Luxury Interiors</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mountain Adventures">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Hill Station Route</span>
+                            <h4 class="gallery-marquee-title">Mountain Adventures</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coastal Routes">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Goa Expressway</span>
+                            <h4 class="gallery-marquee-title">Coastal Routes</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Group Travel">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Private Charters</span>
+                            <h4 class="gallery-marquee-title">Group Travel</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Comfortable Night Journeys">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Night Service</span>
+                            <h4 class="gallery-marquee-title">Night Journeys</h4>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated Set for Infinite Loop -->
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Scenic Highways">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Intercity Express</span>
+                            <h4 class="gallery-marquee-title">Scenic Highways</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Interiors">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Volvo Sleeper</span>
+                            <h4 class="gallery-marquee-title">Luxury Interiors</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mountain Adventures">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Hill Station Route</span>
+                            <h4 class="gallery-marquee-title">Mountain Adventures</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coastal Routes">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Goa Expressway</span>
+                            <h4 class="gallery-marquee-title">Coastal Routes</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Group Travel">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Private Charters</span>
+                            <h4 class="gallery-marquee-title">Group Travel</h4>
+                        </div>
+                    </div>
+
+                    <div class="gallery-marquee-card" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+                        <img src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Comfortable Night Journeys">
+                        <div class="gallery-marquee-overlay">
+                            <span class="gallery-marquee-subtitle">Night Service</span>
+                            <h4 class="gallery-marquee-title">Night Journeys</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 position-relative text-center">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="" id="modalImage" class="img-fluid rounded-3" alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. Testimonials -->
+    <section id="testimonials" class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5 reveal-up">
+                <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">Reviews</h5>
+                <h2 class="display-5 fw-bold font-serif text-dark-blue mb-3">What Our Passengers Say</h2>
+                <div class="divider mx-auto bg-accent rounded"></div>
+            </div>
+
+            <!-- Desktop Carousel (3 items per slide) -->
+            <div id="testimonialDesktop" class="carousel slide pb-5 d-none d-lg-block" data-bs-ride="carousel">
+                <div class="carousel-indicators" style="bottom: 0;">
+                    <button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialDesktop" data-bs-slide-to="1" class="bg-primary" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner reveal-up">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <!-- Card 1 -->
+                            <div class="col-4">
+                                <div class="card border-0 rounded-4 p-4 h-100 shadow-sm testimonial-card">
+                                    <div class="text-accent mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="card-text text-muted mb-4 fst-italic">“The sleeper bus from Mumbai to Goa was extremely comfortable. Clean linens, timely departure, and smooth driving made it the best bus journey I've had.”</p>
+                                    <div class="d-flex align-items-center mt-auto border-top pt-3">
+                                        <img src="https://i.pravatar.cc/150?img=32" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                        <div><h6 class="fw-bold text-dark-blue mb-0">Rakesh Sharma</h6><small class="text-muted">Mumbai - Goa Route</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-4">
+                                <div class="card border-0 rounded-4 p-4 h-100 shadow-sm testimonial-card">
+                                    <div class="text-accent mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="card-text text-muted mb-4 fst-italic">“We chartered a Vintours bus for a family wedding. The staff was polite, the coach was spotless, and they accommodated all our schedule changes gracefully.”</p>
+                                    <div class="d-flex align-items-center mt-auto border-top pt-3">
+                                        <img src="https://i.pravatar.cc/150?img=47" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                        <div><h6 class="fw-bold text-dark-blue mb-0">Priya & Amit</h6><small class="text-muted">Private Charter</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col-4">
+                                <div class="card border-0 rounded-4 p-4 h-100 shadow-sm testimonial-card">
+                                    <div class="text-accent mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="card-text text-muted mb-4 fst-italic">“Took the Volvo to Manali. The ride through the mountains was very safe, the driver was highly skilled, and the staff provided excellent assistance.”</p>
+                                    <div class="d-flex align-items-center mt-auto border-top pt-3">
+                                        <img src="https://i.pravatar.cc/150?img=11" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                        <div><h6 class="fw-bold text-dark-blue mb-0">Vikram Singh</h6><small class="text-muted">Delhi - Manali Route</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <!-- Card 4 -->
+                            <div class="col-4">
+                                <div class="card border-0 rounded-4 p-4 h-100 shadow-sm testimonial-card">
+                                    <div class="text-accent mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="card-text text-muted mb-4 fst-italic">“The weekend getaway was perfect. The semi-sleeper seats provided great back support, and the journey was incredibly scenic.”</p>
+                                    <div class="d-flex align-items-center mt-auto border-top pt-3">
+                                        <img src="https://i.pravatar.cc/150?img=9" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                        <div><h6 class="fw-bold text-dark-blue mb-0">Sneha Patel</h6><small class="text-muted">Bangalore - Munnar</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="col-4">
+                                <div class="card border-0 rounded-4 p-4 h-100 shadow-sm testimonial-card">
+                                    <div class="text-accent mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="card-text text-muted mb-4 fst-italic">“Fast and reliable. We reached right on time, and the boarding process was seamless. Highly recommend their short-haul services.”</p>
+                                    <div class="d-flex align-items-center mt-auto border-top pt-3">
+                                        <img src="https://i.pravatar.cc/150?img=12" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                        <div><h6 class="fw-bold text-dark-blue mb-0">Rahul Desai</h6><small class="text-muted">Pune - Mahabaleshwar</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 6 -->
+                            <div class="col-4">
+                                <div class="card border-0 rounded-4 p-4 h-100 shadow-sm testimonial-card">
+                                    <div class="text-accent mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="card-text text-muted mb-4 fst-italic">“Booked the Tirupati package. Everything was well coordinated, from the bus journey to the darshan. A deeply satisfying spiritual trip.”</p>
+                                    <div class="d-flex align-items-center mt-auto border-top pt-3">
+                                        <img src="https://i.pravatar.cc/150?img=42" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                        <div><h6 class="fw-bold text-dark-blue mb-0">The Gupta Family</h6><small class="text-muted">Pilgrimage Tour</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile/Tablet Carousel (1 item per slide) -->
+            <div id="testimonialMobile" class="carousel slide pb-5 d-block d-lg-none" data-bs-ride="carousel">
+                <div class="carousel-indicators" style="bottom: 0;">
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="1" class="bg-primary" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="2" class="bg-primary" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="3" class="bg-primary" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="4" class="bg-primary" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#testimonialMobile" data-bs-slide-to="5" class="bg-primary" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner reveal-up">
+                    <div class="carousel-item active">
+                        <div class="card border-0 rounded-4 p-4 mx-auto shadow-sm testimonial-card" style="max-width: 400px;">
+                            <div class="text-accent mb-3 text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="card-text text-muted mb-4 fst-italic text-center">“The sleeper bus from Mumbai to Goa was extremely comfortable. Clean linens, timely departure, and smooth driving made it the best bus journey I've had.”</p>
+                            <div class="d-flex align-items-center justify-content-center mt-auto border-top pt-3">
+                                <img src="https://i.pravatar.cc/150?img=32" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                <div class="text-start"><h6 class="fw-bold text-dark-blue mb-0">Rakesh Sharma</h6><small class="text-muted">Mumbai - Goa Route</small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 rounded-4 p-4 mx-auto shadow-sm testimonial-card" style="max-width: 400px;">
+                            <div class="text-accent mb-3 text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="card-text text-muted mb-4 fst-italic text-center">“We chartered a Vintours bus for a family wedding. The staff was polite, the coach was spotless, and they accommodated all our schedule changes gracefully.”</p>
+                            <div class="d-flex align-items-center justify-content-center mt-auto border-top pt-3">
+                                <img src="https://i.pravatar.cc/150?img=47" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                <div class="text-start"><h6 class="fw-bold text-dark-blue mb-0">Priya & Amit</h6><small class="text-muted">Private Charter</small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 rounded-4 p-4 mx-auto shadow-sm testimonial-card" style="max-width: 400px;">
+                            <div class="text-accent mb-3 text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="card-text text-muted mb-4 fst-italic text-center">“Took the Volvo to Manali. The ride through the mountains was very safe, the driver was highly skilled, and the staff provided excellent assistance.”</p>
+                            <div class="d-flex align-items-center justify-content-center mt-auto border-top pt-3">
+                                <img src="https://i.pravatar.cc/150?img=11" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                <div class="text-start"><h6 class="fw-bold text-dark-blue mb-0">Vikram Singh</h6><small class="text-muted">Delhi - Manali Route</small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 rounded-4 p-4 mx-auto shadow-sm testimonial-card" style="max-width: 400px;">
+                            <div class="text-accent mb-3 text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="card-text text-muted mb-4 fst-italic text-center">“The weekend getaway was perfect. The semi-sleeper seats provided great back support, and the journey was incredibly scenic.”</p>
+                            <div class="d-flex align-items-center justify-content-center mt-auto border-top pt-3">
+                                <img src="https://i.pravatar.cc/150?img=9" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                <div class="text-start"><h6 class="fw-bold text-dark-blue mb-0">Sneha Patel</h6><small class="text-muted">Bangalore - Munnar</small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 rounded-4 p-4 mx-auto shadow-sm testimonial-card" style="max-width: 400px;">
+                            <div class="text-accent mb-3 text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="card-text text-muted mb-4 fst-italic text-center">“Fast and reliable. We reached right on time, and the boarding process was seamless. Highly recommend their short-haul services.”</p>
+                            <div class="d-flex align-items-center justify-content-center mt-auto border-top pt-3">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                <div class="text-start"><h6 class="fw-bold text-dark-blue mb-0">Rahul Desai</h6><small class="text-muted">Pune - Mahabaleshwar</small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card border-0 rounded-4 p-4 mx-auto shadow-sm testimonial-card" style="max-width: 400px;">
+                            <div class="text-accent mb-3 text-center"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="card-text text-muted mb-4 fst-italic text-center">“Booked the Tirupati package. Everything was well coordinated, from the bus journey to the darshan. A deeply satisfying spiritual trip.”</p>
+                            <div class="d-flex align-items-center justify-content-center mt-auto border-top pt-3">
+                                <img src="https://i.pravatar.cc/150?img=42" alt="Avatar" class="rounded-circle me-3" width="50" height="50">
+                                <div class="text-start"><h6 class="fw-bold text-dark-blue mb-0">The Gupta Family</h6><small class="text-muted">Pilgrimage Tour</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Call-to-Action Section -->
+    <section class="cta-section text-white text-center d-flex align-items-center position-relative">
+        <div class="container position-relative z-index-1 reveal-up">
+            <h2 class="display-4 fw-bold font-serif mb-3">Ready to Book Your Bus?</h2>
+            <p class="lead mb-5 opacity-90 mx-auto" style="max-width: 600px;">Secure your seat on our premium coaches or hire an entire bus for your group travel needs.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#contact" class="btn btn-accent btn-lg rounded-pill px-5 fw-bold shadow">Book Tickets Now</a>
+                <a href="https://wa.me/1234567890" target="_blank" class="btn btn-whatsapp btn-lg rounded-pill px-5 fw-bold shadow d-flex align-items-center gap-2">
+                    <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Contact Section -->
+    <section id="contact" class="section-padding contact-section-bg">
+        <div class="container">
+            <div class="text-center mb-5 reveal-up">
+                <span class="section-badge mb-2">24/7 SUPPORT & BOOKINGS</span>
+                <h2 class="display-5 fw-bold font-serif text-dark-blue mb-3">Book Your Journey With Us</h2>
+                <div class="divider mx-auto bg-accent rounded"></div>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Left: Dark Premium Info Card -->
+                <div class="col-lg-5 reveal-left">
+                    <div class="contact-dark-card h-100 p-4 p-md-5 rounded-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="live-support-pill mb-4">
+                                <span class="live-pulse-dot"></span> Live Support Active
+                            </div>
+                            <h3 class="fw-bold text-white mb-3 font-serif">Contact Information</h3>
+                            <p class="text-light opacity-75 mb-4 fs-6">Reach out to us for bus ticket bookings, charter bus inquiries, or parcel service tracking.</p>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-icon-box me-3">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-white mb-1">Phone (24/7 Booking)</h6>
+                                    <p class="text-light opacity-75 mb-0 small">+91 98765 43210<br>+91 12345 67890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-icon-box me-3">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-white mb-1">Email Desk</h6>
+                                    <p class="text-light opacity-75 mb-0 small">bookings@vintoursandtravels.com<br>charter@vintoursandtravels.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-icon-box me-3">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-white mb-1">Main Bus Depot & Office</h6>
+                                    <p class="text-light opacity-75 mb-0 small">123 Transport Highway, Sector 45,<br>City Center, Your State - 100010</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-icon-box me-3">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-white mb-1">Office Hours</h6>
+                                    <p class="text-light opacity-75 mb-0 small">Monday - Sunday: 24/7<br>Buses operate round the clock.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border-top border-secondary border-opacity-25 pt-4 mt-3">
+                            <h6 class="fw-bold text-white mb-3 small text-uppercase letter-spacing-1">Connect With Us</h6>
+                            <div class="d-flex gap-3 social-links-light">
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                                <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Modern Form Card -->
+                <div class="col-lg-7 reveal-right">
+                    <div class="form-custom-card h-100 p-4 p-md-5">
+                        <h3 class="fw-bold text-dark-blue mb-2 font-serif">Booking Enquiry</h3>
+                        <p class="text-muted small mb-4">Fill in your travel details below and our team will confirm availability instantly.</p>
+                        
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <!-- Success Message Placeholder -->
+                            <div id="formSuccess" class="alert alert-success d-none rounded-3 mb-4 shadow-sm" role="alert">
+                                <i class="bi bi-check-circle-fill me-2"></i> Thank you! Your booking request has been received. Our team will contact you shortly.
+                            </div>
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label fw-semibold small text-dark">Full Name *</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                        <input type="text" class="form-control shadow-none" id="fullName" placeholder="John Doe" required>
+                                    </div>
+                                    <div class="invalid-feedback">Please enter your full name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label fw-semibold small text-dark">Phone Number *</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                                        <input type="tel" class="form-control shadow-none" id="phone" placeholder="+91 98765 43210" required>
+                                    </div>
+                                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label fw-semibold small text-dark">Email Address *</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                        <input type="email" class="form-control shadow-none" id="email" placeholder="name@example.com" required>
+                                    </div>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="fromCity" class="form-label fw-semibold small text-dark">From (Departure)</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+                                        <input type="text" class="form-control shadow-none" id="fromCity" placeholder="Departure City">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="toCity" class="form-label fw-semibold small text-dark">To (Destination)</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text"><i class="bi bi-geo-fill"></i></span>
+                                        <input type="text" class="form-control shadow-none" id="toCity" placeholder="Destination City">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="travelDate" class="form-label fw-semibold small text-dark">Date of Journey</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
+                                        <input type="date" class="form-control shadow-none text-muted" id="travelDate">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="travelers" class="form-label fw-semibold small text-dark">No. of Passengers</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text"><i class="bi bi-people-fill"></i></span>
+                                        <input type="number" min="1" class="form-control shadow-none" id="travelers" placeholder="E.g., 2">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="busType" class="form-label fw-semibold small text-dark">Bus Preference</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text"><i class="bi bi-bus-front-fill"></i></span>
+                                        <select class="form-select shadow-none text-muted" id="busType">
+                                            <option value="" selected disabled>Select Type</option>
+                                            <option value="AC Sleeper">AC Sleeper</option>
+                                            <option value="Non-AC Sleeper">Non-AC Sleeper</option>
+                                            <option value="AC Seater">AC Seater (Volvo/Scania)</option>
+                                            <option value="Non-AC Seater">Non-AC Seater</option>
+                                            <option value="Charter">Full Bus Charter</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label fw-semibold small text-dark">Additional Details</label>
+                                    <textarea class="form-control border bg-light px-3 py-2 rounded-3 shadow-none" id="message" rows="3" placeholder="Tell us if you have any special requirements, luggage details, or pickup points..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="btn btn-submit-booking w-100 shadow d-flex align-items-center justify-content-center gap-2" type="submit" id="submitBtn">
+                                        <span>Send Booking Request</span> <i class="bi bi-arrow-right-short fs-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map section removed as requested -->
+
+    <!-- 13. Footer -->
+    <footer class="bg-dark-blue text-white pt-5 pb-3">
+        <div class="container pt-4">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6 pr-lg-5">
+                    <a class="d-flex align-items-center text-white text-decoration-none mb-4 fw-bold fs-4" href="#">
+                        <i class="bi bi-bus-front-fill text-accent me-2"></i>
+                        <span>Vintours & Travels</span>
+                    </a>
+                    <p class="text-light opacity-75 mb-4 pe-lg-4">Dedicated to providing safe, comfortable, and affordable bus travel across the country. Our modern fleet ensures you reach your destination with a smile.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#home">Home</a></li>
+                        <li class="mb-2"><a href="#about">About Us</a></li>
+                        <li class="mb-2"><a href="#services">Bus Services</a></li>
+                        <li class="mb-2"><a href="#destinations">Bus Routes</a></li>
+                        <li class="mb-2"><a href="#packages">Tour Packages</a></li>
+                        <li class="mb-2"><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Popular Bus Routes</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#destinations">Mumbai to Goa</a></li>
+                        <li class="mb-2"><a href="#destinations">Delhi to Manali</a></li>
+                        <li class="mb-2"><a href="#destinations">Bangalore to Munnar</a></li>
+                        <li class="mb-2"><a href="#destinations">Chennai to Tirupati</a></li>
+                        <li class="mb-2"><a href="#destinations">Hyderabad to Ooty</a></li>
+                        <li class="mb-2"><a href="#destinations">Pune to Mahabaleshwar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Contact Us</h5>
+                    <ul class="list-unstyled text-light opacity-75 mb-0">
+                        <li class="mb-3 d-flex align-items-start gap-2">
+                            <i class="bi bi-geo-alt-fill text-accent mt-1"></i> 
+                            <span>123 Transport Highway, Sector 45, City Center, Your State - 100010</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill text-accent"></i> 
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-whatsapp text-accent"></i> 
+                            <span>+91 12345 67890</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill text-accent"></i> 
+                            <span>bookings@vintoursandtravels.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary mb-4">
+            
+            <div class="row align-items-center pb-3">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-light opacity-75 small mb-0">
+                        &copy; <span id="currentYear"></span> Vintours & Travels (Bus Services). All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0 small">
+                        <li class="list-inline-item me-3"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Terms & Conditions</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary rounded-circle shadow back-to-top d-flex align-items-center justify-content-center" id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-arrow-up fs-5"></i>
+    </button>
+
+    <!-- Sticky WhatsApp Button (Mobile mainly) -->
+    <a href="https://wa.me/1234567890" target="_blank" class="sticky-whatsapp d-flex align-items-center justify-content-center rounded-circle shadow-lg" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
