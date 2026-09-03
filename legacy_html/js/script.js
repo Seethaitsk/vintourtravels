@@ -171,4 +171,24 @@ document.addEventListener('DOMContentLoaded', function() {
     if (yearSpan) {
         yearSpan.innerText = new Date().getFullYear();
     }
+
+    // 9. Date Picker Icon Click Handling
+    const travelDateInput = document.getElementById('travelDate');
+    if (travelDateInput) {
+        const parentGroup = travelDateInput.closest('.input-group');
+        if (parentGroup) {
+            const iconSpan = parentGroup.querySelector('.input-group-text');
+            if (iconSpan) {
+                iconSpan.style.cursor = 'pointer';
+                iconSpan.addEventListener('click', () => {
+                    if (typeof travelDateInput.showPicker === 'function') {
+                        travelDateInput.showPicker();
+                    } else {
+                        travelDateInput.focus();
+                    }
+                });
+            }
+        }
+    }
 });
+
