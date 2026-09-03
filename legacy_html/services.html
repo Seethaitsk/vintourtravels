@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Bus Services | Vintours & Travels - Intercity & Charter Solutions</title>
+    <meta name="description" content="Explore Vintours & Travels' full suite of bus services: intercity express routes, luxury sleeper coaches, private charter rentals, corporate shuttles, and tour packages.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Bus Services | Vintours & Travels">
+    <meta property="og:description" content="Premium intercity bus travel, private group charters, and corporate shuttle solutions across India.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .services-hero {
+            background: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.75)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+            padding: 120px 0 70px 0;
+        }
+        .service-detail-card {
+            background: #FFFFFF;
+            border-radius: 1.25rem;
+            transition: all 0.35s ease;
+            border: 1px solid rgba(10, 37, 64, 0.06);
+        }
+        .service-detail-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(10, 37, 64, 0.12) !important;
+        }
+        .service-icon-box {
+            width: 75px;
+            height: 75px;
+            background: linear-gradient(135deg, #0A2540 0%, #00B4D8 100%);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .process-step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--accent-color);
+            color: var(--dark-blue);
+            font-weight: 800;
+            font-size: 1.25rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+            box-shadow: 0 4px 15px rgba(255, 183, 3, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Sticky Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition-all">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+                <i class="bi bi-bus-front-fill text-accent me-2 fs-3"></i>
+                <span class="brand-text">Vintours & Travels</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#destinations">Routes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#fleet">Our Fleet</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-whatsapp rounded-pill d-flex align-items-center gap-2">
+                        <i class="bi bi-whatsapp"></i> <span class="d-none d-xl-inline">WhatsApp Us</span>
+                    </a>
+                    <a href="index.html#destinations" class="btn btn-primary rounded-pill btn-book-now">Book Tickets</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Header Banner -->
+    <header class="services-hero text-white position-relative">
+        <div class="container text-center py-5">
+            <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">Our Bus Services</h5>
+            <h1 class="display-4 fw-bold font-serif mb-3 text-white">Comprehensive Luxury Travel & Charter Solutions</h1>
+            <div class="divider mx-auto bg-accent rounded mb-3"></div>
+            <p class="text-light lead mx-auto opacity-90" style="max-width: 720px;">
+                From daily scheduled intercity routes to private group charters and corporate transfers, experience Indian highways with unparalleled luxury and safety.
+            </p>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center mt-4">
+                <ol class="breadcrumb bg-white bg-opacity-10 px-4 py-2 rounded-pill mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none"><i class="bi bi-house-door-fill me-1 text-accent"></i>Home</a></li>
+                    <li class="breadcrumb-item active text-secondary-color fw-semibold" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 3. Core Services Grid -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">What We Offer</h5>
+                <h2 class="display-5 fw-bold font-serif mb-3 text-dark-blue">Designed for Every Traveler & Occasion</h2>
+                <div class="divider mx-auto bg-accent rounded mb-3"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">Tailored transport solutions backed by modern engineering and 24/7 dedicated support.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-detail-card p-4 p-xl-5 h-100 shadow-sm d-flex flex-column">
+                        <div class="service-icon-box shadow-sm">
+                            <i class="bi bi-bus-front"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-dark-blue mb-3 font-serif">Intercity Express Routes</h3>
+                        <p class="text-muted mb-4 flex-grow-1">Scheduled daily departures connecting major metropolises including Mumbai, Goa, Delhi, Manali, Bangalore, and Hyderabad with guaranteed zero-delay policies.</p>
+                        
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Fixed Daily Time-Tables</li>
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Multiple Boarding & Drop Points</li>
+                            <li class="d-flex align-items-center gap-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Live GPS Tracking to Phone</li>
+                        </ul>
+
+                        <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Intercity%20Express%20Routes" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm fw-bold w-100 mt-auto">
+                            <i class="bi bi-whatsapp me-1"></i> Book Intercity Seat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-detail-card p-4 p-xl-5 h-100 shadow-sm d-flex flex-column">
+                        <div class="service-icon-box shadow-sm">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-dark-blue mb-3 font-serif">Night AC Sleeper Service</h3>
+                        <p class="text-muted mb-4 flex-grow-1">Overnight luxury sleeper berths with individual privacy curtains, sanitized white linen, USB-C ports, and whisper-quiet air suspension for restful sleep.</p>
+                        
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Single & Double Sleeper Pods</li>
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Fresh Blanket & Pillow Included</li>
+                            <li class="d-flex align-items-center gap-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Soft Ambient Reading Lights</li>
+                        </ul>
+
+                        <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Night%20Sleeper%20Buses" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm fw-bold w-100 mt-auto">
+                            <i class="bi bi-whatsapp me-1"></i> Reserve Sleeper Berth
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-detail-card p-4 p-xl-5 h-100 shadow-sm d-flex flex-column">
+                        <div class="service-icon-box shadow-sm">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-dark-blue mb-3 font-serif">Private Bus Charters</h3>
+                        <p class="text-muted mb-4 flex-grow-1">Full coach rentals tailored for weddings, family vacations, corporate retreats, and pilgrimage tours. Customizable itineraries and pickup points.</p>
+                        
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> 30 to 53 Seater Coach Capacity</li>
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Customized Stops & Timings</li>
+                            <li class="d-flex align-items-center gap-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Dedicated Uniformed Crew</li>
+                        </ul>
+
+                        <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Chartering%20a%20Private%20Bus" target="_blank" class="btn btn-accent rounded-pill btn-sm fw-bold w-100 mt-auto">
+                            <i class="bi bi-whatsapp me-1"></i> Request Charter Quote
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-detail-card p-4 p-xl-5 h-100 shadow-sm d-flex flex-column">
+                        <div class="service-icon-box shadow-sm">
+                            <i class="bi bi-building-check"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-dark-blue mb-3 font-serif">Corporate & Employee Shuttles</h3>
+                        <p class="text-muted mb-4 flex-grow-1">Long-term, reliable corporate fleet solutions for technology parks, MNC offices, and industrial hubs with live fleet telematics and seat management.</p>
+                        
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> SLA-Backed Punctuality</li>
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Onboard High-Speed Wi-Fi</li>
+                            <li class="d-flex align-items-center gap-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Dedicated Account Manager</li>
+                        </ul>
+
+                        <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Corporate%20Employee%20Shuttles" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm fw-bold w-100 mt-auto">
+                            <i class="bi bi-whatsapp me-1"></i> Contact Corporate Desk
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-detail-card p-4 p-xl-5 h-100 shadow-sm d-flex flex-column">
+                        <div class="service-icon-box shadow-sm">
+                            <i class="bi bi-compass-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-dark-blue mb-3 font-serif">Leisure Tour Packages</h3>
+                        <p class="text-muted mb-4 flex-grow-1">Curated all-inclusive travel packages including luxury bus transit, resort accommodation, sightseeing tours, and meals for popular Indian destinations.</p>
+                        
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Goa, Manali, Kerala & Ooty</li>
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Hotel & Sightseeing Included</li>
+                            <li class="d-flex align-items-center gap-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Expert Local Tour Guides</li>
+                        </ul>
+
+                        <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Tour%20Packages" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm fw-bold w-100 mt-auto">
+                            <i class="bi bi-whatsapp me-1"></i> Explore Tour Packages
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-detail-card p-4 p-xl-5 h-100 shadow-sm d-flex flex-column">
+                        <div class="service-icon-box shadow-sm">
+                            <i class="bi bi-box-seam-fill"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-dark-blue mb-3 font-serif">Express Bus Cargo & Parcels</h3>
+                        <p class="text-muted mb-4 flex-grow-1">Same-day and overnight parcel delivery service utilizing the secure lower hold storage of our daily intercity multi-axle buses.</p>
+                        
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Same-Day Highway Transit</li>
+                            <li class="d-flex align-items-center gap-2 mb-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> Secure Cargo Compartments</li>
+                            <li class="d-flex align-items-center gap-2 text-dark small fw-medium"><i class="bi bi-check-circle-fill text-success"></i> SMS Pickup Notifications</li>
+                        </ul>
+
+                        <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20Express%20Bus%20Cargo" target="_blank" class="btn btn-outline-primary rounded-pill btn-sm fw-bold w-100 mt-auto">
+                            <i class="bi bi-whatsapp me-1"></i> Dispatch Parcel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. How Booking Works Timeline -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">Simplified Booking Process</h5>
+                <h2 class="display-5 fw-bold font-serif mb-3 text-dark-blue">4 Simple Steps to Your Destination</h2>
+                <div class="divider mx-auto bg-accent rounded mb-3"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">Fast, hassle-free booking via instant WhatsApp or helpline connection.</p>
+            </div>
+
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border">
+                        <div class="process-step-number">1</div>
+                        <h4 class="fw-bold text-dark-blue mb-2 font-serif">Choose Route</h4>
+                        <p class="text-muted small mb-0">Select your departure city, destination, and preferred travel date.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border">
+                        <div class="process-step-number">2</div>
+                        <h4 class="fw-bold text-dark-blue mb-2 font-serif">Chat or Call</h4>
+                        <p class="text-muted small mb-0">Connect directly with our 24/7 helpdesk on WhatsApp for live seat choices.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border">
+                        <div class="process-step-number">3</div>
+                        <h4 class="fw-bold text-dark-blue mb-2 font-serif">Instant Ticket</h4>
+                        <p class="text-muted small mb-0">Receive your digital m-ticket with boarding location & bus captain number.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border">
+                        <div class="process-step-number">4</div>
+                        <h4 class="fw-bold text-dark-blue mb-2 font-serif">Board & Relax</h4>
+                        <p class="text-muted small mb-0">Step onboard your luxury AC bus and enjoy a safe, comfortable journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Help Desk CTA Banner -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="fleet-cta-banner rounded-4 p-4 p-md-5 text-white text-center position-relative overflow-hidden shadow-lg">
+                <div class="position-relative z-index-2 mx-auto" style="max-width: 750px;">
+                    <span class="badge bg-accent text-dark fw-bold px-3 py-2 rounded-pill mb-3 text-uppercase letter-spacing-1">24/7 Passenger Help Desk</span>
+                    <h3 class="display-6 fw-bold font-serif mb-3 text-white">Have Questions or Need Instant Ticket Assistance?</h3>
+                    <p class="text-light opacity-90 mb-4 lead mx-auto" style="max-width: 650px;">Our dedicated operations team is available round-the-clock to assist with boarding points, bus schedules, seat availability, or private charter quotes.</p>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                        <a href="https://wa.me/1234567890" target="_blank" class="btn btn-whatsapp btn-lg rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-whatsapp fs-5"></i> Chat on WhatsApp
+                        </a>
+                        <a href="tel:+919876543210" class="btn btn-accent btn-lg rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i> Call Helpline
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer -->
+    <footer class="bg-dark-blue text-white pt-5 pb-3">
+        <div class="container pt-4">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6 pr-lg-5">
+                    <a class="d-flex align-items-center text-white text-decoration-none mb-4 fw-bold fs-4" href="index.html">
+                        <i class="bi bi-bus-front-fill text-accent me-2"></i>
+                        <span>Vintours & Travels</span>
+                    </a>
+                    <p class="text-light opacity-75 mb-4 pe-lg-4">Dedicated to providing safe, comfortable, and affordable bus travel across the country. Our modern fleet ensures you reach your destination with a smile.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html#home">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Bus Services</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Bus Routes</a></li>
+                        <li class="mb-2"><a href="index.html#packages">Tour Packages</a></li>
+                        <li class="mb-2"><a href="index.html#fleet">Fleet & Perks</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Popular Bus Routes</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html#destinations">Mumbai to Goa</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Delhi to Manali</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Bangalore to Munnar</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Chennai to Tirupati</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Hyderabad to Ooty</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Pune to Mahabaleshwar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Contact Us</h5>
+                    <ul class="list-unstyled text-light opacity-75 mb-0">
+                        <li class="mb-3 d-flex align-items-start gap-2">
+                            <i class="bi bi-geo-alt-fill text-accent mt-1"></i> 
+                            <span>123 Transport Highway, Sector 45, City Center, Your State - 100010</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill text-accent"></i> 
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-whatsapp text-accent"></i> 
+                            <span>+91 12345 67890</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill text-accent"></i> 
+                            <span>bookings@vintoursandtravels.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary mb-4">
+            
+            <div class="row align-items-center pb-3">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-light opacity-75 small mb-0">
+                        &copy; <span id="currentYear"></span> Vintours & Travels (Bus Services). All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0 small">
+                        <li class="list-inline-item me-3"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Privacy Policy</a></li>
+                        <li class="list-inline-item me-3"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Terms & Conditions</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary rounded-circle shadow back-to-top d-flex align-items-center justify-content-center" id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-arrow-up fs-5"></i>
+    </button>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="sticky-whatsapp d-flex align-items-center justify-content-center rounded-circle shadow-lg" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

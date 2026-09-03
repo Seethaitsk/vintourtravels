@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Vintours & Travels - Premium Intercity Bus Services</title>
+    <meta name="description" content="Learn about Vintours & Travels, our 15+ year legacy in luxury bus transportation, multi-axle fleet standards, and our commitment to safe, comfortable highway travel.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Us | Vintours & Travels">
+    <meta property="og:description" content="Pioneering safe, luxurious, and punctual intercity bus travels across India.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(10, 37, 64, 0.85), rgba(10, 37, 64, 0.75)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+            padding: 120px 0 70px 0;
+        }
+        .story-img-wrapper {
+            position: relative;
+        }
+        .story-img-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--secondary-color);
+            border-radius: 1rem;
+            z-index: 0;
+        }
+        .story-img-card {
+            position: relative;
+            z-index: 1;
+        }
+        .stat-card-custom {
+            background: #FFFFFF;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(10, 37, 64, 0.08);
+            border: 1px solid rgba(10, 37, 64, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .stat-card-custom:hover {
+            transform: translateY(-5px);
+        }
+        .value-card {
+            background: #FFFFFF;
+            border-radius: 1.25rem;
+            transition: all 0.35s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .value-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(10, 37, 64, 0.12) !important;
+        }
+        .team-card img {
+            height: 280px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Sticky Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition-all">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+                <i class="bi bi-bus-front-fill text-accent me-2 fs-3"></i>
+                <span class="brand-text">Vintours & Travels</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#destinations">Routes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="index.html#fleet">Our Fleet</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-whatsapp rounded-pill d-flex align-items-center gap-2">
+                        <i class="bi bi-whatsapp"></i> <span class="d-none d-xl-inline">WhatsApp Us</span>
+                    </a>
+                    <a href="index.html#destinations" class="btn btn-primary rounded-pill btn-book-now">Book Tickets</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Header Banner -->
+    <header class="about-hero text-white position-relative">
+        <div class="container text-center py-5">
+            <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">About Vintours & Travels</h5>
+            <h1 class="display-4 fw-bold font-serif mb-3 text-white">Redefining Highway Comfort & Safety</h1>
+            <div class="divider mx-auto bg-accent rounded mb-3"></div>
+            <p class="text-light lead mx-auto opacity-90" style="max-width: 700px;">
+                Connecting cities, loved ones, and business destinations across India with multi-axle luxury coaches and zero-compromise safety standards.
+            </p>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center mt-4">
+                <ol class="breadcrumb bg-white bg-opacity-10 px-4 py-2 rounded-pill mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none"><i class="bi bi-house-door-fill me-1 text-accent"></i>Home</a></li>
+                    <li class="breadcrumb-item active text-secondary-color fw-semibold" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 3. Our Story Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="story-img-wrapper pe-lg-4">
+                        <div class="story-img-card rounded-4 overflow-hidden shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Vintours Luxury Bus Fleet" class="img-fluid w-100">
+                        </div>
+                        <div class="position-absolute bottom-0 end-0 bg-dark-blue text-white p-3 p-md-4 rounded-4 shadow-lg m-3 z-index-2 d-none d-sm-block">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="bi bi-award-fill fs-1 text-accent"></i>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-white font-serif">15+ Years</h4>
+                                    <span class="small text-light opacity-75">Highway Excellence</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">Our Journey & Philosophy</h5>
+                    <h2 class="display-5 fw-bold font-serif mb-3 text-dark-blue">Driven by Passion, Engineered for Safety</h2>
+                    <div class="divider bg-accent rounded mb-4"></div>
+                    
+                    <p class="text-muted lead mb-4">
+                        Founded in 2010, Vintours & Travels started with a clear vision: to raise the benchmark of intercity bus travel in India.
+                    </p>
+                    <p class="text-muted mb-4">
+                        What began as a single overnight route connecting major commercial hubs has grown into a premier fleet of over 50 multi-axle Volvo & Scania coaches. We believe that a long journey shouldn't feel like a compromise—it should feel like the start of your destination experience.
+                    </p>
+                    
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                                <span class="fw-semibold text-dark">Real-Time Telematics & Speed Governors</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                                <span class="fw-semibold text-dark">Fresh Sanitized Bedding & Curtains</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                                <span class="fw-semibold text-dark">100% Verified Dual Driver Crew</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                                <span class="fw-semibold text-dark">On-Time Departure Guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold d-inline-flex align-items-center gap-2">
+                        <i class="bi bi-whatsapp"></i> Speak With Our Operations Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Key Stats Counter Grid -->
+    <section class="py-5 bg-light border-top border-bottom">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card-custom p-4 h-100">
+                        <i class="bi bi-bus-front fs-1 text-secondary-color mb-2 d-block"></i>
+                        <h2 class="display-5 fw-bold font-serif text-dark-blue mb-1">50+</h2>
+                        <p class="text-muted fw-medium mb-0">Modern Luxury Buses</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card-custom p-4 h-100">
+                        <i class="bi bi-people-fill fs-1 text-secondary-color mb-2 d-block"></i>
+                        <h2 class="display-5 fw-bold font-serif text-dark-blue mb-1">1.2M+</h2>
+                        <p class="text-muted fw-medium mb-0">Satisfied Passengers</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card-custom p-4 h-100">
+                        <i class="bi bi-geo-alt-fill fs-1 text-secondary-color mb-2 d-block"></i>
+                        <h2 class="display-5 fw-bold font-serif text-dark-blue mb-1">120+</h2>
+                        <p class="text-muted fw-medium mb-0">Daily Intercity Routes</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card-custom p-4 h-100">
+                        <i class="bi bi-clock-history fs-1 text-secondary-color mb-2 d-block"></i>
+                        <h2 class="display-5 fw-bold font-serif text-dark-blue mb-1">99.8%</h2>
+                        <p class="text-muted fw-medium mb-0">On-Time Departure Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Core Values -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">Our Operating Pillars</h5>
+                <h2 class="display-5 fw-bold font-serif mb-3 text-dark-blue">Why Passengers Trust Vintours</h2>
+                <div class="divider mx-auto bg-accent rounded mb-3"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">Every decision we make revolves around safety, punctuality, and maximum passenger satisfaction.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="value-card p-4 h-100 shadow-sm text-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-shield-check fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark-blue mb-2 font-serif">Uncompromised Safety</h4>
+                        <p class="text-muted small mb-0">Dual experienced captains on long journeys, mandatory breathalyzer checks, and speed governors fitted on every vehicle.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="value-card p-4 h-100 shadow-sm text-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-stopwatch fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark-blue mb-2 font-serif">Punctuality Discipline</h4>
+                        <p class="text-muted small mb-0">Our live dispatch control room monitors highway traffic and route conditions to guarantee zero unnecessary delays.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="value-card p-4 h-100 shadow-sm text-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-stars fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark-blue mb-2 font-serif">First-Class Comfort</h4>
+                        <p class="text-muted small mb-0">Ergonomic AC sleeper berths, memory foam seating, individual charging ports, and UV-protected tinted glass windows.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="value-card p-4 h-100 shadow-sm text-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 text-primary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-tag-fill fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark-blue mb-2 font-serif">Transparent Pricing</h4>
+                        <p class="text-muted small mb-0">Fair, straightforward ticket fares with no hidden surcharges or surprise booking fees on any route.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Leadership & Operations Team -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-secondary-color text-uppercase fw-bold letter-spacing-1 mb-2">Leadership Team</h5>
+                <h2 class="display-5 fw-bold font-serif mb-3 text-dark-blue">The People Behind Your Safe Journey</h2>
+                <div class="divider mx-auto bg-accent rounded mb-3"></div>
+                <p class="text-muted lead mx-auto" style="max-width: 650px;">A seasoned team of transport logistics experts, fleet safety engineers, and passenger care managers.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card team-card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rajesh Varma" class="card-img-top">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold text-dark-blue mb-1 font-serif">Rajesh Varma</h4>
+                            <p class="text-secondary-color small fw-semibold mb-3">Founder & Managing Director</p>
+                            <p class="text-muted small mb-0">20+ years of transport industry expertise, passionate about expanding comfortable connectivity across India.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card team-card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ananya Sen" class="card-img-top">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold text-dark-blue mb-1 font-serif">Ananya Sen</h4>
+                            <p class="text-secondary-color small fw-semibold mb-3">Head of Fleet Safety & Compliance</p>
+                            <p class="text-muted small mb-0">Oversees mandatory vehicle maintenance audits, telematics safety protocols, and captain training modules.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card team-card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vikram Singh" class="card-img-top">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold text-dark-blue mb-1 font-serif">Vikram Singh</h4>
+                            <p class="text-secondary-color small fw-semibold mb-3">Chief Operations Manager</p>
+                            <p class="text-muted small mb-0">Directs 24/7 central dispatch, passenger helpline support, and highway route optimization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Help Desk CTA Banner -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="fleet-cta-banner rounded-4 p-4 p-md-5 text-white text-center position-relative overflow-hidden shadow-lg">
+                <div class="position-relative z-index-2 mx-auto" style="max-width: 750px;">
+                    <span class="badge bg-accent text-dark fw-bold px-3 py-2 rounded-pill mb-3 text-uppercase letter-spacing-1">24/7 Passenger Help Desk</span>
+                    <h3 class="display-6 fw-bold font-serif mb-3 text-white">Have Questions or Need Instant Ticket Assistance?</h3>
+                    <p class="text-light opacity-90 mb-4 lead mx-auto" style="max-width: 650px;">Our dedicated operations team is available round-the-clock to assist with boarding points, bus schedules, seat availability, or private charter quotes.</p>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                        <a href="https://wa.me/1234567890" target="_blank" class="btn btn-whatsapp btn-lg rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-whatsapp fs-5"></i> Chat on WhatsApp
+                        </a>
+                        <a href="tel:+919876543210" class="btn btn-accent btn-lg rounded-pill px-4 py-3 fw-bold shadow-sm d-inline-flex align-items-center justify-content-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i> Call Helpline
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="bg-dark-blue text-white pt-5 pb-3">
+        <div class="container pt-4">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6 pr-lg-5">
+                    <a class="d-flex align-items-center text-white text-decoration-none mb-4 fw-bold fs-4" href="index.html">
+                        <i class="bi bi-bus-front-fill text-accent me-2"></i>
+                        <span>Vintours & Travels</span>
+                    </a>
+                    <p class="text-light opacity-75 mb-4 pe-lg-4">Dedicated to providing safe, comfortable, and affordable bus travel across the country. Our modern fleet ensures you reach your destination with a smile.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white opacity-75 text-decoration-none bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-accent" style="width: 40px; height: 40px;"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html#home">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Bus Services</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Bus Routes</a></li>
+                        <li class="mb-2"><a href="index.html#packages">Tour Packages</a></li>
+                        <li class="mb-2"><a href="index.html#fleet">Fleet & Perks</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Popular Bus Routes</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html#destinations">Mumbai to Goa</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Delhi to Manali</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Bangalore to Munnar</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Chennai to Tirupati</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Hyderabad to Ooty</a></li>
+                        <li class="mb-2"><a href="index.html#destinations">Pune to Mahabaleshwar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 font-serif">Contact Us</h5>
+                    <ul class="list-unstyled text-light opacity-75 mb-0">
+                        <li class="mb-3 d-flex align-items-start gap-2">
+                            <i class="bi bi-geo-alt-fill text-accent mt-1"></i> 
+                            <span>123 Transport Highway, Sector 45, City Center, Your State - 100010</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill text-accent"></i> 
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-whatsapp text-accent"></i> 
+                            <span>+91 12345 67890</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill text-accent"></i> 
+                            <span>bookings@vintoursandtravels.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary mb-4">
+            
+            <div class="row align-items-center pb-3">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-light opacity-75 small mb-0">
+                        &copy; <span id="currentYear"></span> Vintours & Travels (Bus Services). All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0 small">
+                        <li class="list-inline-item me-3"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Privacy Policy</a></li>
+                        <li class="list-inline-item me-3"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Terms & Conditions</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-light opacity-75 text-decoration-none hover-accent transition-all">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary rounded-circle shadow back-to-top d-flex align-items-center justify-content-center" id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-arrow-up fs-5"></i>
+    </button>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="sticky-whatsapp d-flex align-items-center justify-content-center rounded-circle shadow-lg" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

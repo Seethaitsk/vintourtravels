@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-navy: #0A2540;
+    --primary-dark: #05192D;
+    --accent-gold: #FFB703;
+    --accent-amber: #D97706;
+    --accent-orange: #FB8500;
+    --sky-blue: #00B4D8;
+    --deep-blue: #0077B6;
+    --light-bg: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --text-primary: #0F172A;
+    --text-muted: #64748B;
+  }
+
+  body {
+    background-color: var(--light-bg);
+    color: var(--text-primary);
+    font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif), Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #05192D;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00B4D8, #FFB703);
+  border-radius: 4px;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism & Vibrant Card Styles */
+.glass-header {
+  background: rgba(10, 37, 64, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 183, 3, 0.2);
+}
+
+.glass-card-dark {
+  background: rgba(5, 25, 45, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+/* Gold & Cyan Gradient Text Utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFB703 0%, #FFF3B0 50%, #FB8500 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-cyan-gold-gradient {
+  background: linear-gradient(135deg, #38BDF8 0%, #7DD3FC 40%, #FFB703 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glowing Accent Borders */
+.gold-glow-border {
+  box-shadow: 0 0 20px rgba(255, 183, 3, 0.35);
+}
+
+.cyan-glow-border {
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.35);
+}
+
+/* Clean Card Styles */
+.card-luxury-hover {
+  transition: box-shadow 0.3s ease;
+}
+
+.card-luxury-hover:hover {
+  box-shadow: 0 10px 25px -5px rgba(10, 37, 64, 0.08);
+}
+
+/* Interactive Shimmer Button */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 70%
+  );
+  transform: rotate(30deg) translateX(-100%);
+  transition: transform 0.75s ease;
+}
+
+.btn-shimmer:hover::after {
+  transform: rotate(30deg) translateX(100%);
+}
+
+/* Floating Ambient Orbs Animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.08);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(22px) scale(0.92);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.15);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 10s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Pulsing Status Dot */
+.live-pulse-dot {
+  position: relative;
+}
+
+.live-pulse-dot::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 9999px;
+  background-color: currentColor;
+  opacity: 0.6;
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
