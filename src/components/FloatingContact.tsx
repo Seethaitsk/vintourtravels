@@ -1,69 +1,50 @@
 "use client";
 
-import React, { useState } from "react";
-import { MessageSquare, PhoneCall, Bus, X, Sparkles } from "lucide-react";
-import { useEnquiry } from "./EnquiryContext";
+import React from "react";
 
 export const FloatingContact: React.FC = () => {
-  const [expanded, setExpanded] = useState(false);
-  const { openEnquiry } = useEnquiry();
-
   return (
-    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-2.5 group">
-      {/* Option menu pops up when expanded */}
-      {expanded && (
-        <div className="flex flex-col items-end gap-2.5 animate-in fade-in slide-in-from-bottom-4 duration-200 mb-1">
-          <a
-            href="https://wa.me/911234567890?text=Hi%20Vintours%20Travels,%20I'd%20like%20to%20enquire%20about%20your%20bus%20services%20and%20packages."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-medium text-xs px-3.5 py-2 rounded-full shadow-lg transition-all"
-          >
-            <span>WhatsApp Us Directly</span>
-            <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center shrink-0">
-              <MessageSquare className="w-3.5 h-3.5 fill-white" />
-            </div>
-          </a>
-
-          <a
-            href="tel:+919876543210"
-            className="flex items-center gap-2.5 bg-[#0A2540] hover:bg-[#05192D] text-white font-medium text-xs px-3.5 py-2 rounded-full shadow-lg transition-all"
-          >
-            <span>Call 24/7 Helpline</span>
-            <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center shrink-0">
-              <PhoneCall className="w-3.5 h-3.5" />
-            </div>
-          </a>
-
-          <button
-            onClick={() => {
-              setExpanded(false);
-              openEnquiry("Quick General Enquiry", "Floating Contact");
-            }}
-            className="flex items-center gap-2.5 bg-gradient-to-r from-[#FFB703] via-[#FB8500] to-[#FFB703] text-slate-950 font-extrabold text-xs px-3.5 py-2 rounded-full shadow-xl transition-all cursor-pointer border border-[#FFB703]/40"
-          >
-            <span>Book / Instant Quote</span>
-            <div className="w-7 h-7 rounded-full bg-black/10 flex items-center justify-center shrink-0">
-              <Bus className="w-3.5 h-3.5" />
-            </div>
-          </button>
-        </div>
-      )}
-
-      {/* Main floating trigger button */}
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-tr from-[#0A2540] via-[#0077B6] to-[#00B4D8] text-white rounded-full shadow-2xl transition-all duration-300 ring-2 sm:ring-4 ring-white/50 active:scale-95 cursor-pointer"
-        aria-label="Contact options"
+    <aside className="fixed bottom-5 right-5 z-50">
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/911234567890?text=Hi%20Vintours%20Travels,%20I'd%20like%20to%20enquire%20about%20your%20bus%20services%20and%20packages."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp"
+        className="group relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer"
       >
-        {expanded ? (
-          <X className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-300 rotate-90" />
-        ) : (
-          <div className="relative">
-            <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6" />
-          </div>
-        )}
-      </button>
-    </div>
+        {/* Periodic Glowing Pulse Rings */}
+        <span className="absolute -inset-2.5 rounded-full bg-[#25D366]/40 animate-ping opacity-75 pointer-events-none" />
+        <span className="absolute -inset-1 rounded-full bg-[#25D366]/30 animate-pulse pointer-events-none" />
+
+        {/* Outline WhatsApp Icon matching requested screenshot */}
+        <svg
+          className="w-8 h-8 sm:w-9 sm:h-9 relative z-10 transition-transform duration-300 group-hover:scale-110 drop-shadow-sm"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.6828 3.46194 15.2582 4.26786 16.6111L3.25 20.75L7.49509 19.7891C8.80949 20.5599 10.3541 21 12 21Z"
+            stroke="white"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M9.25 9.75C9.25 9.33579 9.58579 9 10 9H10.5C10.74 9 10.95 9.17 10.99 9.41L11.4 11.41C11.44 11.64 11.34 11.87 11.16 12L10.5 12.5C11.12 13.74 12.26 14.88 13.5 15.5L14 14.84C14.13 14.66 14.36 14.56 14.59 14.6L16.59 15.01C16.83 15.05 17 15.26 17 15.5V16C17 16.4142 16.6642 16.75 16.25 16.75C12.384 16.75 9.25 13.616 9.25 9.75Z"
+            fill="white"
+          />
+        </svg>
+      </a>
+    </aside>
   );
 };
+
+
+
+
+
+
+
+
