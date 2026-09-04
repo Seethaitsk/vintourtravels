@@ -36,7 +36,7 @@ export const Navbar: React.FC = () => {
               <span className="text-xl font-bold tracking-tight font-serif text-white block">
                 Vintours <span className="text-[#FFB703]">&</span> Travels
               </span>
-              <span className="block text-[10px] text-slate-300 font-medium tracking-widest uppercase">
+              <span className="block text-xs text-slate-300 font-semibold tracking-wider uppercase">
                 Premium Coach & Charter Services
               </span>
             </div>
@@ -50,10 +50,10 @@ export const Navbar: React.FC = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-xs uppercase tracking-wider transition-colors relative py-2 ${
+                  className={`text-sm tracking-wide transition-colors relative py-2 ${
                     active
-                      ? "text-[#FFB703] font-bold"
-                      : "text-slate-300 hover:text-white font-semibold"
+                      ? "text-[#FFB703] font-extrabold"
+                      : "text-slate-200 hover:text-white font-bold"
                   }`}
                 >
                   {link.name}
@@ -74,7 +74,7 @@ export const Navbar: React.FC = () => {
               href="https://wa.me/911234567890"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/10 text-xs font-semibold transition-all"
+              className="flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/10 text-xs sm:text-sm font-bold transition-all"
             >
               <MessageSquare className="w-4 h-4" />
               <span className="hidden xl:inline">WhatsApp</span>
@@ -82,7 +82,7 @@ export const Navbar: React.FC = () => {
 
             <button
               onClick={() => openEnquiry("Ticket Booking Enquiry", "Navbar CTA")}
-              className="px-5 py-2.5 rounded-full bg-[#FFB703] hover:bg-[#e5a400] text-slate-950 text-xs font-extrabold uppercase tracking-wider shadow-md transition-colors cursor-pointer"
+              className="px-5 py-2.5 rounded-full bg-[#FFB703] hover:bg-[#e5a400] text-slate-950 text-xs sm:text-sm font-extrabold uppercase tracking-wider shadow-md transition-colors cursor-pointer"
             >
               Book / Enquire
             </button>

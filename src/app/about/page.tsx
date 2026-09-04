@@ -186,18 +186,18 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
             {/* Left Side Content: Vertical Stepper / Timeline Layout */}
-            <div className="lg:col-span-6 space-y-8">
+            <div className="lg:col-span-6 space-y-8 flex flex-col items-center lg:items-start text-center lg:text-left">
               {/* Header Title with Premium Tracked Eyebrow */}
-              <div className="space-y-3">
+              <div className="space-y-3 flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0077B6]/10 border border-[#0077B6]/20 text-[#0077B6] text-[11px] font-extrabold uppercase tracking-[0.18em]">
                   <Sparkles className="w-3.5 h-3.5 text-[#00B4D8]" />
                   <span>Core Brand Principles</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif text-[#0A2540] tracking-tight leading-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif text-[#0A2540] tracking-tight leading-tight text-center lg:text-left">
                   Our <span className="text-[#0077B6]">Mission</span> & Vision
                 </h2>
-                <p className="text-slate-500 text-xs sm:text-sm font-medium leading-relaxed max-w-xl">
+                <p className="text-slate-500 text-xs sm:text-sm font-medium leading-relaxed max-w-xl text-center lg:text-left">
                   Driven by uncompromised safety, passenger hospitality, and fleet excellence across every highway corridor.
                 </p>
               </div>
@@ -444,21 +444,21 @@ export default function AboutPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
 
-          {/* Left 3-Image Creative Collage (Matching Reference Design) */}
+          {/* Left 3-Image Creative Collage (Responsive & Aligned across Mobile & Desktop) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, x: -30 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="lg:col-span-6 order-2 lg:order-1 relative w-full flex items-center justify-center lg:justify-end py-4 px-2 sm:px-4"
+            className="lg:col-span-6 order-2 lg:order-1 relative w-full flex items-center justify-center lg:justify-end py-4 px-2 sm:px-4 overflow-visible"
           >
-            <div className="relative w-full max-w-[460px] sm:max-w-[520px] h-[380px] sm:h-[460px] flex items-center justify-center">
+            <div className="relative w-full max-w-[300px] xs:max-w-[340px] sm:max-w-[520px] h-[350px] xs:h-[380px] sm:h-[460px] flex items-center justify-center">
               
               {/* Soft Cream Backdrop Circle for Left Standing Figure */}
-              <div className="absolute left-0 bottom-2 sm:bottom-4 w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] bg-[#FFF5E6] rounded-full z-0 pointer-events-none" />
+              <div className="absolute left-0 bottom-2 sm:bottom-4 w-[180px] h-[180px] xs:w-[210px] xs:h-[210px] sm:w-[300px] sm:h-[300px] bg-[#FFF5E6] rounded-full z-0 pointer-events-none" />
 
               {/* Left Tall Traveler Figure (abt-pic1.webp) */}
-              <div className="absolute left-0 bottom-0 h-[370px] sm:h-[450px] z-10 flex items-end">
+              <div className="absolute left-0 bottom-0 h-[320px] xs:h-[350px] sm:h-[450px] z-10 flex items-end">
                 <img
                   src="/images/abt-pic1.webp"
                   alt="Vintours Traveler"
@@ -472,7 +472,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="absolute top-2 right-8 sm:right-12 z-20 w-36 h-36 sm:w-44 sm:h-44 rounded-full border-[5px] border-white shadow-xl overflow-hidden bg-white"
+                className="absolute top-1 xs:top-2 right-1 xs:right-3 sm:right-12 z-20 w-28 h-28 xs:w-34 xs:h-34 sm:w-44 sm:h-44 rounded-full border-[4px] sm:border-[5px] border-white shadow-xl overflow-hidden bg-white"
               >
                 <img
                   src="/images/we-rec3-pic2.webp"
@@ -487,7 +487,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.35 }}
-                className="absolute bottom-1 right-0 sm:right-2 z-30 w-48 h-48 sm:w-64 sm:h-64 rounded-full border-[6px] sm:border-[8px] border-[#DDF3F7] shadow-2xl overflow-hidden bg-white"
+                className="absolute bottom-4 xs:bottom-5 sm:bottom-1 right-0 xs:right-1 sm:right-2 z-30 w-36 h-36 xs:w-42 xs:h-42 sm:w-64 sm:h-64 rounded-full border-[5px] sm:border-[8px] border-[#DDF3F7] shadow-2xl overflow-hidden bg-white"
               >
                 <img
                   src="/images/we-rec3-pic.webp"
@@ -505,19 +505,19 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="lg:col-span-6 order-1 lg:order-2 space-y-6"
+            className="lg:col-span-6 order-1 lg:order-2 space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left"
           >
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 text-[#0077B6] text-[11px] font-extrabold uppercase tracking-[0.2em]">
+            <div className="space-y-3 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 text-[#0077B6] text-[11px] font-extrabold uppercase tracking-[0.2em] bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-100">
                 <ShieldCheck className="w-4 h-4 text-emerald-500" />
                 <span>Uncompromising Safety Architecture</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif text-[#0A2540] tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif text-[#0A2540] tracking-tight leading-tight text-center lg:text-left">
                 Safety & Service Quality Protocols
               </h2>
             </div>
 
-            <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            <p className="text-slate-600 text-xs sm:text-sm leading-relaxed text-center lg:text-left">
               We understand that passenger safety is the single most crucial requirement when traveling on long-distance highways. Our multi-layered safety architecture protects your journey at every kilometer.
             </p>
 

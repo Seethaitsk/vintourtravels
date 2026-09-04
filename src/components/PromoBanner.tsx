@@ -64,7 +64,7 @@ export default function PromoBanner({
       <div className="relative z-20 p-6 sm:p-10 lg:p-14 max-w-xl space-y-4">
         {/* Subtitle / Tag */}
         {subTitle && (
-          <span className="text-xs sm:text-sm font-serif font-semibold text-[#FFC107] tracking-wider block drop-shadow-sm">
+          <span className="text-sm font-serif font-semibold text-[#FFC107] tracking-wider block drop-shadow-sm">
             {subTitle}
           </span>
         )}
@@ -80,10 +80,10 @@ export default function PromoBanner({
         </h2>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap items-center gap-3.5 pt-2">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 w-full sm:w-auto">
           <button
             onClick={handlePrimaryClick}
-            className="inline-flex items-center justify-center px-7 sm:px-8 py-3.5 bg-white hover:bg-slate-100 text-[#051728] font-bold text-xs sm:text-sm rounded-full shadow-xl transition-all cursor-pointer border border-white"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-7 sm:px-8 py-3.5 bg-white hover:bg-slate-100 text-[#051728] font-extrabold text-sm rounded-full shadow-xl transition-all cursor-pointer border border-white text-center"
           >
             <span>{buttonText}</span>
           </button>
@@ -93,9 +93,9 @@ export default function PromoBanner({
               href={`https://wa.me/${whatsappNumber}?text=Hi%20Vintours%20Travels,%20I'd%20like%20to%20enquire%20about%20special%20offers.`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-6 sm:px-7 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm rounded-full shadow-xl transition-all cursor-pointer border border-emerald-500/40"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm rounded-full shadow-xl transition-all cursor-pointer border border-emerald-500/40 text-center"
             >
-              <MessageSquare className="w-4 h-4" />
+              <MessageSquare className="w-4 h-4 shrink-0 text-white" />
               <span>{secondaryButtonText}</span>
             </a>
           )}

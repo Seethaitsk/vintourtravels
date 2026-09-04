@@ -33,11 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${plusJakarta.variable} ${lora.variable} scroll-smooth`}>
-      <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-[#00B4D8] selection:text-white">
+    <html lang="en" className={`${plusJakarta.variable} ${lora.variable} scroll-smooth max-w-full overflow-x-hidden`}>
+      <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-[#00B4D8] selection:text-white max-w-full overflow-x-hidden">
         <EnquiryProvider>
           <Navbar />
-          <main className="flex-grow pt-20">{children}</main>
+          <main className="flex-grow pt-20 w-full overflow-x-hidden">{children}</main>
           <Footer />
           <FloatingContact />
           <EnquiryModal />

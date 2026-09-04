@@ -178,20 +178,20 @@ export default function PackagesPage() {
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#FFB703] bg-white/10 px-4 py-1.5 rounded-full inline-block border border-white/10">
+          <span className="text-sm font-bold uppercase tracking-wider text-[#FFB703] bg-white/10 px-4 py-1.5 rounded-full inline-block border border-white/10">
             Handcrafted Bus & Holiday Getaways
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold font-serif text-white">
             Curated Bus Tour Packages
           </h1>
-          <p className="text-slate-300 max-w-2xl mx-auto text-base">
+          <p className="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
             All-inclusive holiday getaways featuring luxury Volvo AC coach transit, handpicked boutique hotels, guided sightseeing, and 24/7 dispatch support.
           </p>
         </div>
       </section>
 
       {/* 2. INTERACTIVE SEARCH & CATEGORY FILTER CONTROL BAR */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl p-4 sm:p-6 shadow-xl border border-slate-200/80 space-y-4 sm:space-y-6">
           {/* Top Row: Search Input Field + Results Count */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-100 pb-4">
@@ -202,7 +202,7 @@ export default function PackagesPage() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search package name, destination, or places..."
-                className="w-full pl-11 pr-4 py-2.5 bg-slate-50 text-slate-800 text-xs sm:text-sm rounded-full border border-slate-200 focus:outline-none focus:border-[#0077B6] focus:bg-white transition-all"
+                className="w-full pl-11 pr-4 py-2.5 bg-slate-50 text-slate-800 text-sm rounded-full border border-slate-200 focus:outline-none focus:border-[#0077B6] focus:bg-white transition-all"
               />
               {searchQuery && (
                 <button
@@ -214,7 +214,7 @@ export default function PackagesPage() {
               )}
             </div>
 
-            <div className="text-xs text-slate-500 font-medium">
+            <div className="text-sm text-slate-500 font-medium">
               Showing <span className="font-bold text-[#0A2540]">{filteredPackages.length}</span> of{" "}
               <span className="font-bold text-[#0A2540]">{tourPackagesData.length}</span> tour packages
             </div>
@@ -229,7 +229,7 @@ export default function PackagesPage() {
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 sm:px-5 py-2.5 rounded-full text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
+                  className={`px-4 sm:px-5 py-2.5 rounded-full text-sm font-bold transition-all flex items-center gap-2 cursor-pointer ${
                     isActive
                       ? "bg-[#0A2540] text-[#FFB703] shadow-md scale-105"
                       : "bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200/80"
@@ -237,7 +237,7 @@ export default function PackagesPage() {
                 >
                   <span>{cat}</span>
                   <span
-                    className={`text-[10px] px-2 py-0.5 rounded-full font-extrabold ${
+                    className={`text-xs px-2 py-0.5 rounded-full font-extrabold ${
                       isActive ? "bg-[#FFB703] text-slate-950" : "bg-slate-200 text-slate-600"
                     }`}
                   >
@@ -318,7 +318,7 @@ export default function PackagesPage() {
                     {/* 2. Package Card Body */}
                     <div className="p-6 space-y-4">
                       {/* Destination Tag */}
-                      <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0077B6] bg-sky-50 px-3 py-1 rounded-full border border-sky-100/80">
+                      <div className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0077B6] bg-sky-50 px-3 py-1 rounded-full border border-sky-100/80">
                         <MapPin className="w-3.5 h-3.5 text-[#0077B6]" />
                         <span>{pkg.destination}</span>
                       </div>
@@ -329,29 +329,29 @@ export default function PackagesPage() {
                       </h3>
 
                       {/* Short Description */}
-                      <p className="text-xs text-slate-600 leading-relaxed line-clamp-2">
+                      <p className="text-sm text-slate-600 leading-relaxed line-clamp-2">
                         {pkg.description}
                       </p>
 
                       {/* Transit Coach Line */}
-                      <div className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 flex items-center gap-2 text-slate-700 text-xs">
+                      <div className="bg-slate-50 p-2.5 rounded-xl border border-slate-100 flex items-center gap-2 text-slate-700 text-sm">
                         <Bus className="w-4 h-4 text-[#0077B6] shrink-0" />
-                        <span className="text-[11px] text-slate-500 font-medium shrink-0">Transit Coach:</span>
-                        <span className="text-xs font-bold text-[#0A2540] truncate">{pkg.busType}</span>
+                        <span className="text-sm text-slate-500 font-medium shrink-0">Transit Coach:</span>
+                        <span className="text-sm font-bold text-[#0A2540] truncate">{pkg.busType}</span>
                       </div>
 
                       {/* Places Covered Tags */}
                       <div className="space-y-1.5 pt-1">
-                        <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-600 block">
+                        <span className="text-sm font-bold uppercase tracking-wider text-slate-600 block">
                           Places Covered:
                         </span>
                         <div className="flex flex-wrap gap-1.5">
                           {pkg.places.map((place, pIdx) => (
                             <span
                               key={pIdx}
-                              className="bg-[#0A2540]/5 text-[#0A2540] text-[11px] font-medium px-2.5 py-1 rounded-lg border border-[#0A2540]/10 flex items-center gap-1"
+                              className="bg-[#0A2540]/5 text-[#0A2540] text-sm font-semibold px-2.5 py-1 rounded-lg border border-[#0A2540]/10 flex items-center gap-1"
                             >
-                              <CheckCircle2 className="w-3 h-3 text-emerald-500 shrink-0" />
+                              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                               <span>{place}</span>
                             </span>
                           ))}
@@ -365,22 +365,22 @@ export default function PackagesPage() {
                     {/* Price Line */}
                     <div className="pt-3 border-t border-slate-100 flex items-end justify-between">
                       <div>
-                        <span className="text-[10px] text-slate-600 font-semibold uppercase tracking-wider block">
+                        <span className="text-xs text-slate-600 font-semibold uppercase tracking-wider block">
                           Starting Fare
                         </span>
                         <div className="flex items-baseline gap-2">
                           <span className="text-2xl font-extrabold text-[#0077B6] font-serif">
                             {pkg.price}
                           </span>
-                          <span className="text-xs text-slate-600 font-normal">/ person</span>
+                          <span className="text-sm text-slate-600 font-normal">/ person</span>
                           {pkg.originalPrice && (
-                            <span className="text-xs text-slate-600 line-through font-normal">
+                            <span className="text-sm text-slate-600 line-through font-normal">
                               {pkg.originalPrice}
                             </span>
                           )}
                         </div>
                       </div>
-                      <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
+                      <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
                         Inclusive of Transit
                       </span>
                     </div>
@@ -389,18 +389,18 @@ export default function PackagesPage() {
                     <div className="space-y-2">
                       <button
                         onClick={() => openEnquiry(pkg.name, `Package (${pkg.destination})`)}
-                        className="w-full py-3.5 rounded-xl bg-[#0A2540] hover:bg-[#05192D] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer group-hover:bg-[#0077B6]"
+                        className="w-full py-3.5 rounded-xl bg-[#0A2540] hover:bg-[#05192D] text-white font-bold text-sm uppercase tracking-wider shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer group-hover:bg-[#0077B6]"
                       >
-                        <Send className="w-3.5 h-3.5" />
+                        <Send className="w-4 h-4" />
                         <span>Form Enquiry / Book</span>
-                        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </button>
 
                       <button
                         onClick={() => handleWhatsAppPackage(pkg)}
-                        className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider shadow transition-all flex items-center justify-center gap-2 cursor-pointer"
+                        className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm uppercase tracking-wider shadow transition-all flex items-center justify-center gap-2 cursor-pointer"
                       >
-                        <MessageSquare className="w-3.5 h-3.5 text-white" />
+                        <MessageSquare className="w-4 h-4 text-white" />
                         <span>Enquire on WhatsApp</span>
                       </button>
                     </div>
@@ -416,7 +416,7 @@ export default function PackagesPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/80 shadow-sm space-y-6">
           <div className="text-center max-w-xl mx-auto space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#0077B6] bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-100 inline-block">
+            <span className="text-sm font-bold uppercase tracking-widest text-[#0077B6] bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-100 inline-block">
               Vintours Advantage
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold font-serif text-[#0A2540]">
@@ -429,8 +429,8 @@ export default function PackagesPage() {
               <div className="w-10 h-10 rounded-xl bg-sky-100 text-[#0077B6] flex items-center justify-center">
                 <Hotel className="w-5 h-5" />
               </div>
-              <h4 className="text-sm font-bold font-serif text-[#0A2540]">3 & 4-Star Handpicked Hotels</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <h4 className="text-base font-bold font-serif text-[#0A2540]">3 & 4-Star Handpicked Hotels</h4>
+              <p className="text-sm text-slate-500 leading-relaxed">
                 Stay at verified, hygienic hotels with complimentary breakfast and prime city proximity.
               </p>
             </div>
@@ -439,8 +439,8 @@ export default function PackagesPage() {
               <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center">
                 <Bus className="w-5 h-5" />
               </div>
-              <h4 className="text-sm font-bold font-serif text-[#0A2540]">Volvo AC Sleeper Transit</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <h4 className="text-base font-bold font-serif text-[#0A2540]">Volvo AC Sleeper Transit</h4>
+              <p className="text-sm text-slate-500 leading-relaxed">
                 Roundtrip Volvo multi-axle AC sleeper coach seat allocation with USB charging and fresh linen.
               </p>
             </div>
@@ -449,8 +449,8 @@ export default function PackagesPage() {
               <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
                 <Compass className="w-5 h-5" />
               </div>
-              <h4 className="text-sm font-bold font-serif text-[#0A2540]">Guided Sightseeing Passes</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <h4 className="text-base font-bold font-serif text-[#0A2540]">Guided Sightseeing Passes</h4>
+              <p className="text-sm text-slate-500 leading-relaxed">
                 Pre-arranged local sightseeing passes, monument permits, and experienced local destination guides.
               </p>
             </div>
@@ -459,8 +459,8 @@ export default function PackagesPage() {
               <div className="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center">
                 <Award className="w-5 h-5" />
               </div>
-              <h4 className="text-sm font-bold font-serif text-[#0A2540]">Transparent Fares</h4>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <h4 className="text-base font-bold font-serif text-[#0A2540]">Transparent Fares</h4>
+              <p className="text-sm text-slate-500 leading-relaxed">
                 Zero hidden service surcharges or driver bata surprises. What you see is what you pay.
               </p>
             </div>

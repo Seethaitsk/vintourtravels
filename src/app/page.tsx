@@ -389,7 +389,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="max-w-2xl space-y-6 text-left"
+            className="max-w-2xl mx-auto lg:mx-0 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start"
           >
             {/* Top Glassmorphism Trust Badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md shadow-md">
@@ -400,7 +400,7 @@ export default function HomePage() {
             </div>
 
             {/* Title with Gradient Gold Accent */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif leading-[1.14] text-white tracking-tight drop-shadow-xl">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif leading-[1.14] text-white tracking-tight drop-shadow-xl text-center lg:text-left">
               India's Premier <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFB703] via-[#F3C649] to-[#FB8500] drop-shadow-lg">
                 Luxury Road Journeys
@@ -408,61 +408,61 @@ export default function HomePage() {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-slate-200 text-sm sm:text-base leading-relaxed font-normal max-w-xl drop-shadow-md">
+            <p className="text-slate-200 text-sm sm:text-base leading-relaxed font-normal max-w-xl drop-shadow-md text-center lg:text-left">
               Book guaranteed Volvo AC Sleepers, executive tourist buses, and luxury Tempo Travellers for intercity trips, group tours, and outstation rentals.
             </p>
 
             {/* Main Action Buttons */}
-            <div className="flex flex-wrap items-center gap-3.5 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 pt-2 w-full max-w-md lg:max-w-none">
               <button
                 onClick={() => openEnquiry("Hero Main Booking", "General Enquiry")}
-                className="px-7 py-3.5 rounded-full bg-gradient-to-r from-[#FFB703] via-[#FB8500] to-[#FFB703] text-slate-950 font-extrabold text-xs uppercase tracking-wider shadow-xl transition-all flex items-center gap-2 cursor-pointer"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gradient-to-r from-[#FFB703] via-[#FB8500] to-[#FFB703] text-slate-950 font-extrabold text-xs uppercase tracking-wider shadow-xl transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                <Sparkles className="w-4 h-4" />
+                <Sparkles className="w-4 h-4 shrink-0" />
                 <span>Enquire & Book Vehicles</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 shrink-0" />
               </button>
 
               <a
                 href="https://wa.me/911234567890?text=Hi%20Vintours%20Travels,%20I'd%20like%20to%20enquire%20about%20a%20vehicle%20booking."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider backdrop-blur-md border border-white/20 transition-all flex items-center gap-2 cursor-pointer shadow-lg"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider backdrop-blur-md border border-white/20 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg"
               >
-                <MessageSquare className="w-4 h-4 text-emerald-400" />
+                <MessageSquare className="w-4 h-4 text-emerald-400 shrink-0" />
                 <span>WhatsApp Instant Chat</span>
               </a>
             </div>
 
             {/* Key Metrics / Trust Points Grid */}
-            <div className="pt-4 grid grid-cols-3 gap-3 border-t border-white/10 max-w-xl">
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-[#FFB703]/20 flex items-center justify-center text-[#FFB703] shrink-0 border border-[#FFB703]/30 shadow-inner group hover:scale-110 transition-transform">
-                  <Star className="w-4 h-4 fill-[#FFB703]" />
+            <div className="pt-4 grid grid-cols-3 gap-1.5 sm:gap-3 border-t border-white/10 max-w-xl">
+              <div className="flex items-center gap-1.5 sm:gap-2.5">
+                <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-xl bg-[#FFB703]/20 flex items-center justify-center text-[#FFB703] shrink-0 border border-[#FFB703]/30 shadow-inner group hover:scale-110 transition-transform">
+                  <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-[#FFB703]" />
                 </div>
                 <div>
                   <span className="text-xs sm:text-sm font-extrabold text-white block leading-tight">4.9 / 5</span>
-                  <span className="text-[10px] text-slate-300 font-medium">10k+ Reviews</span>
+                  <span className="text-[9px] sm:text-[10px] text-slate-300 font-medium">10k+ Reviews</span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-[#00B4D8]/20 flex items-center justify-center text-[#00B4D8] shrink-0 border border-[#00B4D8]/30 shadow-inner group hover:scale-110 transition-transform">
-                  <Clock className="w-4 h-4" />
+              <div className="flex items-center gap-1.5 sm:gap-2.5">
+                <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-xl bg-[#00B4D8]/20 flex items-center justify-center text-[#00B4D8] shrink-0 border border-[#00B4D8]/30 shadow-inner group hover:scale-110 transition-transform">
+                  <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </div>
                 <div>
                   <span className="text-xs sm:text-sm font-extrabold text-white block leading-tight">99.8%</span>
-                  <span className="text-[10px] text-slate-300 font-medium">On-Time Record</span>
+                  <span className="text-[9px] sm:text-[10px] text-slate-300 font-medium">On-Time Record</span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 border border-emerald-500/30 shadow-inner group hover:scale-110 transition-transform">
-                  <ShieldCheck className="w-4 h-4" />
+              <div className="flex items-center gap-1.5 sm:gap-2.5">
+                <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 border border-emerald-500/30 shadow-inner group hover:scale-110 transition-transform">
+                  <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </div>
                 <div>
                   <span className="text-xs sm:text-sm font-extrabold text-white block leading-tight">100%</span>
-                  <span className="text-[10px] text-slate-300 font-medium">Guaranteed Boarding</span>
+                  <span className="text-[9px] sm:text-[10px] text-slate-300 font-medium">Guaranteed Boarding</span>
                 </div>
               </div>
             </div>
@@ -474,14 +474,14 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column: 4-CARD ASYMMETRIC PHOTO GRID */}
-          <div className="grid grid-cols-12 gap-3.5 h-[420px]">
+          <div className="grid grid-cols-1 sm:grid-cols-12 gap-3.5 sm:h-[420px]">
             {/* Column 1: Tall Vertical Card */}
             <motion.div
               initial={{ opacity: 0, x: -40, y: -40 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-              className="col-span-5 relative h-full rounded-3xl overflow-hidden shadow-md group border border-slate-200 cursor-pointer"
+              className="col-span-1 sm:col-span-5 relative h-52 sm:h-full rounded-3xl overflow-hidden shadow-md group border border-slate-200 cursor-pointer"
             >
               <img
                 src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80"
@@ -498,7 +498,7 @@ export default function HomePage() {
             </motion.div>
 
             {/* Column 2: Stacked Right Cards (col-span-7) */}
-            <div className="col-span-7 grid grid-rows-2 gap-3.5 h-full">
+            <div className="col-span-1 sm:col-span-7 grid grid-rows-2 gap-3.5 h-[280px] sm:h-full">
               {/* Top Wide Horizontal Card */}
               <motion.div
                 initial={{ opacity: 0, x: 40, y: -40 }}
@@ -563,15 +563,15 @@ export default function HomePage() {
           </div>
 
           {/* Right Column: Text & Stat Counters */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#0077B6] bg-sky-50 px-3 py-1.5 rounded-full border border-sky-100">
               <Bus className="w-4 h-4" />
               <span>Company Introduction</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold font-serif text-[#0A2540] leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-bold font-serif text-[#0A2540] leading-tight text-center lg:text-left">
               Welcome to Vintours & Travels — Redefining Indian Highway Transit
             </h2>
-            <p className="text-slate-600 text-sm leading-relaxed">
+            <p className="text-slate-600 text-sm leading-relaxed text-center lg:text-left">
               Established in 2010, Vintours & Travels has transformed long-distance highway travel across India. We believe road journeys should be an enjoyable, restful highlight of your travel itinerary.
             </p>
             <p className="text-slate-600 text-sm leading-relaxed">
@@ -649,8 +649,8 @@ export default function HomePage() {
       {/* 3. FEATURED VEHICLES — CARS / BUSES / VANS */}
       <section className="bg-slate-100 py-20 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-            <div>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 text-center md:text-left flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#0077B6] bg-white px-3 py-1.5 rounded-full border border-slate-200 mb-2">
                 Our Modern Fleet
               </span>
@@ -720,8 +720,8 @@ export default function HomePage() {
 
       {/* 4. POPULAR TOUR PACKAGES */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-          <div>
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 text-center md:text-left flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#0077B6] bg-sky-50 px-3 py-1.5 rounded-full border border-sky-100 mb-2">
               Handcrafted Holiday Journeys
             </span>
@@ -835,8 +835,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Column: Active Service Dynamic Details */}
-            <div className="lg:col-span-5 space-y-6">
-              <div className="space-y-2">
+            <div className="lg:col-span-5 space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="space-y-2 flex flex-col items-center lg:items-start">
                 <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#00B4D8] bg-[#00B4D8]/10 px-4 py-1.5 rounded-full border border-[#00B4D8]/30 shadow-sm">
                   {mainServices[activeServiceIdx].badge}
                 </span>
@@ -849,12 +849,12 @@ export default function HomePage() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 16 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
-                  className="space-y-4"
+                  className="space-y-4 flex flex-col items-center lg:items-start text-center lg:text-left"
                 >
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif text-white leading-tight">
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif text-white leading-tight text-center lg:text-left">
                     {mainServices[activeServiceIdx].title}
                   </h2>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal max-w-md">
+                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal max-w-md text-center lg:text-left">
                     {mainServices[activeServiceIdx].desc}
                   </p>
                   
@@ -962,8 +962,8 @@ export default function HomePage() {
       {/* 7. GALLERY PREVIEW */}
       <section className="bg-transparent py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-            <div>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 text-center md:text-left flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#0077B6] bg-white px-3 py-1.5 rounded-full border border-slate-200 mb-2">
                 Visual Showcase
               </span>
@@ -986,8 +986,8 @@ export default function HomePage() {
       {/* 8. CUSTOMER REVIEWS / TESTIMONIALS AUTO CAROUSEL */}
       <section className="bg-[#05192D] text-white py-20 overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-            <div className="space-y-3">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 text-center md:text-left flex flex-col items-center md:items-start">
+            <div className="space-y-3 flex flex-col items-center md:items-start text-center md:text-left">
               <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#FFB703] bg-white/10 px-4 py-1.5 rounded-full border border-white/10">
                 Passenger Stories
               </span>

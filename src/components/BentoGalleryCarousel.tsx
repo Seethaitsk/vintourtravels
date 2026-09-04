@@ -227,7 +227,7 @@ export const BentoGalleryCarousel: React.FC<BentoGalleryCarouselProps> = ({
         </div>
 
         {/* RIGHT HALF (Cols 7-12) */}
-        <div className="lg:col-span-6 grid grid-cols-2 gap-4.5">
+        <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4.5">
 
           {/* Column A (Explore -> Tall Center -> Stay) */}
           <div className="flex flex-col gap-4.5 justify-between">

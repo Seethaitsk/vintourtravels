@@ -148,13 +148,13 @@ export default function ServicesPage() {
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#FFB703] bg-white/10 px-4 py-1.5 rounded-full inline-block border border-white/10">
+          <span className="text-sm font-bold uppercase tracking-wider text-[#FFB703] bg-white/10 px-4 py-1.5 rounded-full inline-block border border-white/10">
             Comprehensive Transport Solutions
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold font-serif text-white">
             Our Major Travel Services
           </h1>
-          <p className="text-slate-300 max-w-2xl mx-auto text-base">
+          <p className="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base">
             From single-day car rentals to 53-seater luxury tourist buses, family trips, corporate shuttles, and customized tours.
           </p>
         </div>
@@ -167,7 +167,7 @@ export default function ServicesPage() {
             <button
               key={tab}
               onClick={() => setActiveFilter(tab)}
-              className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
+              className={`px-5 py-2.5 rounded-full text-sm font-bold transition-all cursor-pointer ${
                 activeFilter === tab
                   ? "bg-[#0A2540] text-[#00B4D8] shadow-md scale-105"
                   : "bg-white text-slate-700 hover:bg-slate-200 border border-slate-200"
@@ -186,12 +186,12 @@ export default function ServicesPage() {
           <div className="bg-white rounded-3xl p-12 text-center border border-slate-200/80 shadow-sm space-y-4 max-w-md mx-auto">
             <Compass className="w-12 h-12 text-slate-300 mx-auto" />
             <h3 className="text-xl font-bold font-serif text-[#0A2540]">No Services Found</h3>
-            <p className="text-xs text-slate-500">
+            <p className="text-sm text-slate-500">
               We couldn't find any services matching your filter. Try selecting another category.
             </p>
             <button
               onClick={() => setActiveFilter("All")}
-              className="px-6 py-2.5 rounded-full bg-[#0A2540] text-white text-xs font-bold uppercase tracking-wider shadow hover:bg-[#05192D] transition-all cursor-pointer"
+              className="px-6 py-2.5 rounded-full bg-[#0A2540] text-white text-sm font-bold uppercase tracking-wider shadow hover:bg-[#05192D] transition-all cursor-pointer"
             >
               Reset All Filters
             </button>
@@ -224,7 +224,7 @@ export default function ServicesPage() {
 
                     {/* 3. Top Diagonal Corner Ribbon Banner */}
                     <div className="absolute top-0 right-0 z-30 overflow-hidden w-36 h-36 pointer-events-none">
-                      <div className="absolute top-6 -right-9 w-44 bg-gradient-to-r from-[#FFB703] via-[#FB8500] to-[#FFB703] text-slate-950 font-extrabold text-[10px] uppercase tracking-wider text-center py-1.5 rotate-45 shadow-lg border-y border-white/30">
+                      <div className="absolute top-6 -right-9 w-44 bg-gradient-to-r from-[#FFB703] via-[#FB8500] to-[#FFB703] text-slate-950 font-extrabold text-xs uppercase tracking-wider text-center py-1.5 rotate-45 shadow-lg border-y border-white/30">
                         {service.tag}
                       </div>
                     </div>
@@ -234,7 +234,7 @@ export default function ServicesPage() {
                       {/* Top Left Glass Icon Badge */}
                       <div className="inline-flex items-center gap-2 bg-slate-950/60 backdrop-blur-md text-[#00B4D8] px-3.5 py-1.5 rounded-full border border-white/20 shadow-lg">
                         <IconComponent className="w-4 h-4 text-[#00B4D8]" />
-                        <span className="text-xs font-bold text-white">{service.category}</span>
+                        <span className="text-sm font-bold text-white">{service.category}</span>
                       </div>
                     </div>
 
@@ -242,13 +242,13 @@ export default function ServicesPage() {
                     <div className="relative z-20 space-y-4">
                       {/* Overlaid Title & Description */}
                       <div className="px-6 space-y-2">
-                        <span className="inline-block text-[11px] font-bold text-[#FFB703] uppercase tracking-widest">
+                        <span className="inline-block text-xs font-bold text-[#FFB703] uppercase tracking-widest">
                           Vintours Travel Service
                         </span>
                         <h3 className="text-2xl font-extrabold font-serif text-white group-hover:text-[#FFB703] transition-colors leading-snug drop-shadow-md">
                           {service.title}
                         </h3>
-                        <p className="text-xs text-slate-200 leading-relaxed font-normal line-clamp-2 drop-shadow">
+                        <p className="text-sm text-slate-200 leading-relaxed font-normal line-clamp-2 drop-shadow">
                           {service.description}
                         </p>
                       </div>
@@ -257,19 +257,19 @@ export default function ServicesPage() {
                       <div className="w-full bg-slate-950/85 backdrop-blur-xl border-t border-white/15 p-3.5 flex items-center justify-between gap-3">
                         <button
                           onClick={() => openEnquiry(service.title, service.category)}
-                          className="flex-1 py-3 px-3 rounded-xl bg-gradient-to-r from-[#0077B6] to-[#00B4D8] hover:from-[#00B4D8] hover:to-[#0077B6] text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 shadow-lg group/btn cursor-pointer"
+                          className="flex-1 py-3 px-3 rounded-xl bg-gradient-to-r from-[#0077B6] to-[#00B4D8] hover:from-[#00B4D8] hover:to-[#0077B6] text-white font-bold text-sm uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 shadow-lg group/btn cursor-pointer"
                         >
-                          <Send className="w-3.5 h-3.5" />
-                          <span className="font-extrabold text-[11px]">Book Service</span>
-                          <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
+                          <Send className="w-4 h-4" />
+                          <span className="font-extrabold text-sm">Book Service</span>
+                          <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                         </button>
 
                         <button
                           onClick={() => handleWhatsAppService(service)}
-                          className="flex-1 py-3 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 shadow-lg cursor-pointer"
+                          className="flex-1 py-3 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 shadow-lg cursor-pointer"
                         >
-                          <MessageSquare className="w-3.5 h-3.5 text-white" />
-                          <span className="font-extrabold text-[11px]">WhatsApp</span>
+                          <MessageSquare className="w-4 h-4 text-white" />
+                          <span className="font-extrabold text-sm">WhatsApp</span>
                         </button>
                       </div>
                     </div>
